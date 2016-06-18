@@ -4,25 +4,78 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ApiClient.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>Suto Stream.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SutoStream.ApiClient.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>testingTarget.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>27</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7C3BF3311CEDA3F800838CC7</key>
+		<key>7C0407011CF5DBBE008D3D77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C3BF3481CEDA3FB00838CC7</key>
+		<key>7C04070A1CF5DBBF008D3D77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C3BF3531CEDA3FB00838CC7</key>
+		<key>7C0407281CF5DEE9008D3D77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C0407311CF5DEE9008D3D77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C45CAB21CEDFDDD009CE382</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C45CAC91CEDFDDE009CE382</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C45CAD41CEDFDDE009CE382</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CE8EC301CEF5C3800471A46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CE8EC391CEF5C3800471A46</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,16 +8,69 @@
 
 import UIKit
 import CoreData
+import Swinject
+import FlowSlideMenu
+import DualSlideMenu
+import MSDynamicsDrawerViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let container : Container = Container(registeringClosure: serviceLocate)
+    static var CurrentApp : AppDelegate!
+    static var AppSetting : ISetingAdapter!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        AppDelegate.CurrentApp = self
+
+        UINavigationBar.appearance().barTintColor = AppConstant.AppColor
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
+        window.rootViewController =  getControllerForLaunching()
+        
+        self.window = window
         return true
+    }
+    
+    func getControllerForLaunching() -> UIViewController!
+    {
+        AppDelegate.AppSetting = getInstance()
+        // Change it later to skip the intro screen after first time
+        if(AppDelegate.AppSetting.OpenFistTime())
+        {
+            AppDelegate.AppSetting.SetValue(false, key: AppConstant.FirstTimeOpen)
+            return IntroViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+        }
+        else
+        {
+            let controller : SWRevealViewController? = getInstance()
+            
+//            let controller = MSDynamicsDrawerViewController()
+//            controller.paneViewController = mainView
+//            controller.setDrawerViewController(leftView, forDirection: .Left)
+//            controller.addStyler(MSDynamicsDrawerParallaxStyler(), forDirection: .Left)
+//            controller.setRevealWidth(300, forDirection: .Left)
+            
+//            let controller = DualSlideMenuViewController(mainViewController: mainView, leftMenuViewController: leftView)
+//            controller.addSwipeGestureInSide(leftView, direction: .Left)
+//            controller.leftSideOffset = 300
+//            controller.rightSideOffset = 300
+//            FlowCurveOptions.animation_reveal = 0
+//            FlowCurveOptions.animation_open = 0.01
+//            FlowCurveOptions.bgColor = AppConstant.AppColor
+//            FlowSlideMenuOptions.animationDuration = 0.01
+//            
+//            FlowSlideMenuOptions.leftViewWidth = 300
+//            
+//            let flowController = LLFlowSlideMenuVC(
+//                mainViewController: SutoTabBarController(),
+//                leftViewController: IntroViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil))
+//            
+            return controller!
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

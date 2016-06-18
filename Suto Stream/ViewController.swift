@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Suto Stream
 //
-//  Created by Ngo Quoc Thang on May/19/16.
+//  Created by Ngo Quoc Thang on May/30/16.
 //  Copyright © 2016 Ngo Quoc Thang. All rights reserved.
 //
 

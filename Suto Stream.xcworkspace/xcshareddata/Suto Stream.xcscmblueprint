@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7CF3C3B54BB0E8189585EAF8BBD6477330AB67DD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7CF3C3B54BB0E8189585EAF8BBD6477330AB67DD" : 0,
+    "3E11CED233572ACC0E181F75EFAE6CAB582B5C2D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C0CBD426-EA97-4B1A-8338-13872C5E4275",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7CF3C3B54BB0E8189585EAF8BBD6477330AB67DD" : "Suto%20Stream\/",
+    "3E11CED233572ACC0E181F75EFAE6CAB582B5C2D" : "restaurent\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Suto Stream",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Suto Stream.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:thang2410199\/restaurent-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E11CED233572ACC0E181F75EFAE6CAB582B5C2D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thang2410199\/Universal-Stream.iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7CF3C3B54BB0E8189585EAF8BBD6477330AB67DD"
+    }
+  ]
+}

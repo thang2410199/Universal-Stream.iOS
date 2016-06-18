@@ -1,0 +1,6 @@
+framework module FlowSlideMenu {
+  umbrella header "FlowSlideMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
