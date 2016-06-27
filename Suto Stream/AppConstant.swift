@@ -28,3 +28,8 @@ struct AppConstant {
     
     static let FirstTimeOpen = "FirstTimeOpen"
 }
+
+class AppAction {
+    static let Key = "AppAction"
+    static let Login = "Login"
+}

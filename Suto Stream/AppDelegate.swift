@@ -12,27 +12,63 @@ import Swinject
 import FlowSlideMenu
 import DualSlideMenu
 import MSDynamicsDrawerViewController
+import DropDown
+
+let oauth2NotificationKey = "AppLaunchedWithURLNotification"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let container : Container = Container(registeringClosure: serviceLocate)
+    static var IsRunning = false
     static var CurrentApp : AppDelegate!
     static var AppSetting : ISetingAdapter!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         AppDelegate.CurrentApp = self
+        AppDelegate.IsRunning = true
 
+        SetupApp()
+        return true
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        if(!AppDelegate.IsRunning) {
+            SetupApp()
+        }
+        
+        if (url.host == "sutostream") {
+            let notification = NSNotification(name: oauth2NotificationKey,
+                                              object:nil,
+                                              userInfo:[UIApplicationLaunchOptionsURLKey:url])
+            NSNotificationCenter.defaultCenter().postNotification(notification)
+        }
+        return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if(!AppDelegate.IsRunning) {
+            SetupApp()
+        }
+        
+        let notification = NSNotification(name: oauth2NotificationKey,
+                                          object:nil,
+                                          userInfo:[UIApplicationLaunchOptionsURLKey:url])
+        NSNotificationCenter.defaultCenter().postNotification(notification)
+        
+        return true
+    }
+    
+    func SetupApp(){
         UINavigationBar.appearance().barTintColor = AppConstant.AppColor
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window.backgroundColor = UIColor.whiteColor()
         window.makeKeyAndVisible()
         window.rootViewController =  getControllerForLaunching()
-        
+        DropDown.startListeningToKeyboard()
         self.window = window
-        return true
     }
     
     func getControllerForLaunching() -> UIViewController!
@@ -69,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                mainViewController: SutoTabBarController(),
 //                leftViewController: IntroViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil))
 //            
+            //return SutoTabBarController()
             return controller!
         }
     }

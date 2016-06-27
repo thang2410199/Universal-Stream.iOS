@@ -34,4 +34,15 @@ class SutoNavigationController : UINavigationController {
 //        statusBar.autoSetDimension(.Height, toSize: 20)
 //        statusBar.autoMatchDimension(.Width, toDimension: .Width, ofView: self.view)
     }
+    
+}
+
+extension SutoNavigationController {
+    override func shouldAutorotate() -> Bool {
+        return visibleViewController!.shouldAutorotate()
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return (visibleViewController?.supportedInterfaceOrientations())!
+    }
 }

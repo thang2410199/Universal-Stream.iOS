@@ -8,7 +8,6 @@
 
 import Foundation
 import ReactiveCocoa
-import ApiClient
 
 // Inherits NSObject to use rac_willDeallocSignal.
 public final class TwitchGameCellViewModel: NSObject, TwitchGameCellModeling {

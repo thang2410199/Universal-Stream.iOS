@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import ApiClient
 
 public final class HomeCollectionViewController : UICollectionViewController, TabbarItemDelegate {
     var initilized : Bool = false
@@ -63,6 +62,10 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
     
     let refreshControl = UIRefreshControl()
     
+    public override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
     override public func viewDidLoad() {
         self.collectionView?.registerClass(TwitchGameCollectionCell.self, forCellWithReuseIdentifier: gameCellIndentifier)
         if let navigationController = self.navigationController {
@@ -87,6 +90,7 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         if !initilized {
             initilized = true
             //refreshControl.beginRefreshing()
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeCollectionViewController.OnAppAction(_:)), name: AppAction.Key, object: nil)
             viewModel?.startSearch()
         }
         
@@ -128,6 +132,11 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
             })
             .start()
 
+    }
+    
+    func OnAppAction(notification : NSNotification)
+    {
+        viewModel?.Authorize({_ in }, onError: {}, context : (AppDelegate.CurrentApp.window?.rootViewController)!)
     }
     
     func settingsButtonTapped() {

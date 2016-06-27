@@ -4,11 +4,14 @@ PODS:
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
   - AMSlideMenu (1.5.4)
+  - AsyncSwift (1.7.2)
   - BFPaperButton (2.0.29):
     - UIColor+BFPaperColors
+  - DropDown (0.1.5)
   - DualSlideMenu (1.7.3)
   - DZNEmptyDataSet (1.8.1)
   - FlowSlideMenu (0.1.8)
+  - iOS-Slide-Menu (1.5)
   - Kingfisher (2.4.1)
   - LoremIpsum (1.0.0)
   - MMDrawerController (0.5.7):
@@ -26,7 +29,10 @@ PODS:
   - MobilePlayer (1.1.5)
   - MSDynamicsDrawerViewController (1.5.1)
   - Nimble (4.0.1)
+  - OAuthSwift (0.5.2)
   - ObjectMapper (1.3.0)
+  - p2.OAuth2 (2.2.6):
+    - SwiftKeychain (~> 1.0)
   - PureLayout (3.0.1)
   - Quick (0.9.2)
   - ReactiveCocoa (4.1.0):
@@ -51,10 +57,16 @@ PODS:
   - RxCocoa (2.5.0):
     - RxSwift (~> 2.5)
   - RxSwift (2.5.0)
+  - RxTests (2.5.0):
+    - RxSwift (~> 2.5)
   - SDWebImage (3.8.0):
     - SDWebImage/Core (= 3.8.0)
   - SDWebImage/Core (3.8.0)
   - Spring (1.0.3)
+  - SRKControls (3.0.5):
+    - SRKControls/Controls (= 3.0.5)
+  - SRKControls/Controls (3.0.5)
+  - StatefulViewController (1.1)
   - SugarRecord (2.2.8):
     - SugarRecord/CoreData (= 2.2.8)
     - SugarRecord/CoreData+iCloud (= 2.2.8)
@@ -99,6 +111,7 @@ PODS:
     - RxCocoa (~> 2.5.0)
     - RxSwift (~> 2.5.0)
   - SVProgressHUD (2.0.3)
+  - SwiftKeychain (1.0.0)
   - SwiftyJSON (2.3.2)
   - Swinject (1.1.2)
   - UIColor+BFPaperColors (1.7.2)
@@ -107,22 +120,33 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
   - AMSlideMenu (~> 1.5.4)
+  - AsyncSwift
   - BFPaperButton
+  - DropDown
   - DualSlideMenu
   - DZNEmptyDataSet
   - FlowSlideMenu
+  - iOS-Slide-Menu
   - Kingfisher (~> 2.4)
   - LoremIpsum (~> 1.0)
   - MMDrawerController (~> 0.5.7)
   - MobilePlayer
   - MSDynamicsDrawerViewController
   - Nimble
+  - OAuthSwift (~> 0.5.0)
   - ObjectMapper (~> 1.3)
+  - p2.OAuth2
   - PureLayout
   - Quick
   - ReactiveCocoa (~> 4.1)
+  - RxBlocking (~> 2.0)
+  - RxCocoa (~> 2.0)
+  - RxSwift (~> 2.0)
+  - RxTests (~> 2.0)
   - SDWebImage (~> 3.7)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+  - SRKControls (~> 3.0.1)
+  - StatefulViewController (~> 1.0)
   - SugarRecord
   - SVProgressHUD
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
@@ -147,17 +171,22 @@ SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   AlamofireObjectMapper: 2d16585d06177be0116d76de73497e77437798af
   AMSlideMenu: 8571937703d2b8e187b22c1416be4cafc3532a11
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
   BFPaperButton: 7df738f2e749a9a4edd3e043f0621ee02215e417
+  DropDown: addffd49f2a014e079ed854adcb3c5473c1ebdf2
   DualSlideMenu: 8e1c5255a95c3dcfc1c6dc470105278765f52093
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FlowSlideMenu: 1994bcbe22c12c61fcb52e78a3da5189cef2c4d6
+  iOS-Slide-Menu: 40b0cbd8916c42afc755f0869793cd09e7a32102
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   MobilePlayer: 2fdc07a564fa89da65ff660f8fdcf06ab75f775d
   MSDynamicsDrawerViewController: 2874df90f5e9453dc7d4e32f8038b50615d4baa7
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
+  p2.OAuth2: a89edc5660aca8a5349882ee9008de793bbbbcd0
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
@@ -167,14 +196,18 @@ SPEC CHECKSUMS:
   RxBlocking: 595d9ab56dde6b00beaa5aba40e95b150d2135f1
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  RxTests: 1b13bea0a138552b52aeead549ef08d578bcda9e
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SRKControls: ef82f31f3bdea31ab8ec5d36057f553c8b8815a5
+  StatefulViewController: 396f6d25676680a5c0503143cca55be23ab8c362
   SugarRecord: 2338098ccefc055764c968b2c469b450f63fcc53
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftKeychain: fd9ad69f7b3ff7a0c7ba579da508bbaa89a395b2
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
   UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
-PODFILE CHECKSUM: 098590353a8f808ddd25ea2a08460086d1cb9ca4
+PODFILE CHECKSUM: 3fe4af53f27e61ec2f0b828d46832fe52be5863e
 
 COCOAPODS: 1.0.0

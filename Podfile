@@ -10,6 +10,11 @@ target 'Suto Stream' do
 
   #reactive
   pod 'ReactiveCocoa', '~> 4.1'
+  
+  pod 'RxSwift',    '~> 2.0'
+  pod 'RxCocoa',    '~> 2.0'
+  pod 'RxBlocking', '~> 2.0'
+  pod 'RxTests',    '~> 2.0'
 
   # placeholder
   pod 'LoremIpsum', '~> 1.0'
@@ -22,9 +27,19 @@ target 'Suto Stream' do
   pod 'AMSlideMenu', '~> 1.5.4'
   pod 'DualSlideMenu'
   pod 'MSDynamicsDrawerViewController'
+  pod 'iOS-Slide-Menu'
   pod 'MMDrawerController', '~> 0.5.7'
   pod 'BFPaperButton'
   pod 'SRKControls', '~> 3.0.1'
+  pod 'DropDown'
+  pod 'StatefulViewController', '~> 1.0'
+  
+  # Async support
+  pod 'AsyncSwift'
+  
+  # oauth2
+  pod 'p2.OAuth2'
+  pod 'OAuthSwift', '~> 0.5.0'
   
   # for m3u8 parse
   # pod 'M3U8Kit2'

@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
+extension SWRevealViewController {
+    override public func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        if let selected = self.frontViewController {
+            return selected.supportedInterfaceOrientations()
+        }
+        return super.supportedInterfaceOrientations()
+    }
+    override public func shouldAutorotate() -> Bool {
+        if let selected = self.frontViewController {
+            return selected.shouldAutorotate()
+        }
+        return super.shouldAutorotate()
+    }
+}
+
 protocol TabbarItemDelegate: NSObjectProtocol {
     func viewControllerScrollViewGoesToTop()
 }
@@ -108,7 +123,19 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
-        
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        if let selected = selectedViewController {
+            return selected.supportedInterfaceOrientations()
+        }
+        return super.supportedInterfaceOrientations()
+    }
+    override func shouldAutorotate() -> Bool {
+        if let selected = selectedViewController {
+            return selected.shouldAutorotate()
+        }
+        return super.shouldAutorotate()
     }
 }
 

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ApiClient
 import UIKit
 
 public class StreamListController : UITableViewController, UIGestureRecognizerDelegate {    
@@ -31,6 +30,10 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         super.init(coder : aDecoder)
     }
     
+    public override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
     override public func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -52,7 +55,7 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         self.tableView.registerClass(StreamCell.self, forCellReuseIdentifier: streamCellIdentifier)
         self.tableView.separatorStyle = .None
         self.tableView.separatorColor = UIColor.clearColor()
-        self.tableView.estimatedRowHeight = StreamCell.ImageHeight
+        //self.tableView.estimatedRowHeight = StreamCell.ImageHeight
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:"<", style:.Plain, target:self, action: #selector(StreamListController.backButtonHit))
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         //self.tabBarController?.hidesBottomBarWhenPushed = true
@@ -105,8 +108,10 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         GetData()
     }
     
-    override public func willMoveToParentViewController(parent: UIViewController?) {
-        self.viewModel.Reset()
+    public override func willMoveToParentViewController(parent: UIViewController?) {
+//        if(parent != nil) {
+//            self.viewModel.Reset()
+//        }
     }
     
     override public func viewDidAppear(animated: Bool) {
@@ -119,7 +124,7 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
             dispatch_async(dispatch_get_main_queue()) {
                 self.refreshControl!.endRefreshing()
                 self.process.stopAnimating()
-                self.scrollViewDidScroll(self.tableView)
+                //self.scrollViewDidScroll(self.tableView)
             }
         })
     }

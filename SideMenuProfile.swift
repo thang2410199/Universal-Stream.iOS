@@ -67,6 +67,7 @@ class SideMenuProfile : UIView {
         loginButton.setTitleColor(AppConstant.AppWhite, forState: .Normal)
         loginButton.setTitle("login", forState: .Normal)
         loginButton.cornerRadius = 0
+        loginButton.addTarget(self, action: #selector(SideMenuProfile.OnLogin), forControlEvents: .TouchUpInside)
         
         //Layout
         self.addSubview(profileImage)
@@ -84,4 +85,8 @@ class SideMenuProfile : UIView {
         loginButton.autoPinEdgesToSuperviewEdges()
     }
     
+    func OnLogin()
+    {
+        NSNotificationCenter.defaultCenter().postNotificationName(AppAction.Key, object: AppAction.Login, userInfo: nil)
+    }
 }

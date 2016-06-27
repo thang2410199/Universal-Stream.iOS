@@ -8,7 +8,6 @@
 
 import Foundation
 import Swinject
-import ApiClient
 
 func getInstance<T>() -> T? {
     return AppDelegate.CurrentApp.container.resolve(T)
@@ -49,6 +48,11 @@ func serviceLocate(container : Container) -> Void {
     container.register(TwitchStreamInfoSerice.self) { r in
         TwitchStreamInfoSerice(webService: r.resolve(IWebService)!, parser: r.resolve(IM3U8Parser)!)
     }
+    
+    container.register(Oauth2Service.self) {
+        r in
+        Oauth2Service()
+    }.inObjectScope(.Container)
     
     // Models
 //    container.register(Networking.self) { _ in Network() }

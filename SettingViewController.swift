@@ -9,14 +9,19 @@
 import Foundation
 import PureLayout
 import UIKit
+import SRKControls
 
-class SettingViewController : UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SettingViewController : UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate
+{
     
     var tableView : UITableView!
+    var comboBox : SRKComboBox!
     
     private let _sections = [
         ["Video Quality", "Notification", "Chat Enable"]
     ]
+    
+    let videoQualities = ["Source", "High", "Medium", "Low", "Mobile"]
     
     
     override func viewDidLoad() {
@@ -32,6 +37,7 @@ class SettingViewController : UIViewController, UITableViewDelegate, UITableView
         self.navigationItem.title = "Settings"
         //self.hidesBottomBarWhenPushed = true
         self.view.backgroundColor = AppConstant.AppWhite
+    
 
         //Layout
         self.view.addSubview(tableView)
@@ -47,6 +53,15 @@ class SettingViewController : UIViewController, UITableViewDelegate, UITableView
         return .LightContent
     }
     
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
+    
     func notificationChanged(toggleSwitch : UISwitch) {
         let value = toggleSwitch.on
         AppDelegate.AppSetting.SetValue(value, key: "testNotification")
@@ -56,6 +71,8 @@ class SettingViewController : UIViewController, UITableViewDelegate, UITableView
         let value = toggleSwitch.on
         AppDelegate.AppSetting.SetValue(value, key: "testChat")
     }
+    
+
 }
 
 extension SettingViewController {
@@ -71,6 +88,21 @@ extension SettingViewController {
         switch (indexPath.row) {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("videoQualityIdentifier") as! VideoQualityCell
+//            cell.comboBox.delegate = self
+//            cell.comboBox.delegateForComboBox = self
+//            if(cell.comboBox.text?.isEmpty == true) {
+//                cell.comboBox.text = videoQualities[2]
+//            }
+//            self.comboBox = cell.comboBox
+            
+            cell.dropDown.dataSource = videoQualities
+            cell.dropDown.direction = .Bottom
+            cell.dropDown.bottomOffset = CGPoint(x: 0, y:cell.dropDown.anchorView!.bounds.height)
+            cell.dropDown.selectionAction = {(index: Int, item: String) in
+                cell.videoQuality?.text = item
+            }
+            // TODO: Replace with correct value from setting
+            cell.videoQuality.text = "High"
             cell.textLabel?.text = _sections[0][0]
             return cell
         case 1:
@@ -97,4 +129,14 @@ extension SettingViewController {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 54
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if(indexPath.row == 0) {
+            let cell = tableView.cellForRowAtIndexPath(indexPath) as! VideoQualityCell
+            let index = videoQualities.indexOf(cell.videoQuality.text!)
+            cell.dropDown.selectRowAtIndex(index)
+            cell.dropDown.show()
+        }
+    }
 }
+

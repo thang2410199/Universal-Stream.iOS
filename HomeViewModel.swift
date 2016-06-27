@@ -94,6 +94,12 @@ public final class HomeViewModel : HomeViewModeling {
             .start()
     }
     
+    public func Authorize(onComplete: CompleteBlock, onError: ErrorBlock, context : AnyObject) {
+        let oauth_service : Oauth2Service? = getInstance()
+        oauth_service?.Authorize(onComplete, onError: onError, context: context)
+        
+    }
+    
     //process event at ViewModel
     public func selectCellAtIndex(index: Int) {
 //        imageDetailViewModel?.update(foundImages, atIndex: index)

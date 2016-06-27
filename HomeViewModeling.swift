@@ -19,4 +19,9 @@ public protocol HomeViewModeling {
     var loadNextPage: Action<(), (), NoError> { get }
     
     func selectCellAtIndex(index: Int)
+    
+    func Authorize(onComplete: CompleteBlock, onError: ErrorBlock, context : AnyObject)
 }
+
+public typealias CompleteBlock = ((data : AnyObject?) -> Void)
+public typealias ErrorBlock = (() -> Void)

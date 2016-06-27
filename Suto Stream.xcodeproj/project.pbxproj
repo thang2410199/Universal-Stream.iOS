@@ -43,9 +43,9 @@
 		7C1EA5AF1CF7313500905A9F /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5AE1CF7313500905A9F /* RoundedCornersView.swift */; };
 		7C1EA5B21CF740A300905A9F /* SutoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5B11CF740A300905A9F /* SutoNavigationController.swift */; };
 		7C1EA5B41CF84C4E00905A9F /* SutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5B31CF84C4D00905A9F /* SutoViewController.swift */; };
-		7C3D09861CFC5B3900FFD47E /* Pods_Suto_Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */; };
 		7C44F0961D0AD9DD00681476 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44F0951D0AD9DD00681476 /* SideMenuViewController.swift */; };
 		7C4576A31D144CF500CF9A44 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4576A21D144CF500CF9A44 /* SettingCell.swift */; };
+		7C4576A51D18254400CF9A44 /* Oauth2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4576A41D18254400CF9A44 /* Oauth2Service.swift */; };
 		7C45CAB71CEDFDDD009CE382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CAB61CEDFDDD009CE382 /* AppDelegate.swift */; };
 		7C45CABC1CEDFDDD009CE382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C45CABA1CEDFDDD009CE382 /* Main.storyboard */; };
 		7C45CABF1CEDFDDD009CE382 /* Suto_Stream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CABD1CEDFDDD009CE382 /* Suto_Stream.xcdatamodeld */; };
@@ -104,8 +104,7 @@
 		7CE8EC251CEF56A900471A46 /* TwitchGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC241CEF56A900471A46 /* TwitchGameCell.swift */; };
 		7CE8EC271CEF57CA00471A46 /* TwitchGameCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC261CEF57CA00471A46 /* TwitchGameCellModeling.swift */; };
 		7CE8EC291CEF57D700471A46 /* TwitchGameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */; };
-		8003A45CA60A25B5767B51FA /* Pods_Suto_StreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C6523E5F2D1252DC82101 /* Pods_Suto_StreamUITests.framework */; };
-		B0C05B62DC9DC1229C46660C /* Pods_Suto_StreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0E20EAA5BFD6CF8E99BACD /* Pods_Suto_StreamTests.framework */; };
+		7CEAA8AC1D211F2700E442F6 /* Pods_Suto_Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,25 +124,10 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7C3D09851CFC5B0B00FFD47E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0E539A4C433B7B875CC757AC /* Pods-Suto StreamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamTests/Pods-Suto StreamTests.debug.xcconfig"; sourceTree = "<group>"; };
-		202C6523E5F2D1252DC82101 /* Pods_Suto_StreamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_StreamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA58B430E33CAD9B517666 /* Pods-Suto Stream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto Stream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suto Stream/Pods-Suto Stream.debug.xcconfig"; sourceTree = "<group>"; };
 		61B5FAFD05A4D3633EF1D045 /* Pods-Suto StreamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamUITests/Pods-Suto StreamUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6D0E20EAA5BFD6CF8E99BACD /* Pods_Suto_StreamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_StreamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0406F21CF46CBF008D3D77 /* StreamListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamListController.swift; sourceTree = "<group>"; };
 		7C0406F91CF59A61008D3D77 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		7C0406FB1CF5A498008D3D77 /* TwitchGameCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCollectionCell.swift; sourceTree = "<group>"; };
@@ -180,10 +164,10 @@
 		7C1EA5AE1CF7313500905A9F /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		7C1EA5B11CF740A300905A9F /* SutoNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SutoNavigationController.swift; sourceTree = "<group>"; };
 		7C1EA5B31CF84C4D00905A9F /* SutoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SutoViewController.swift; sourceTree = "<group>"; };
-		7C3D098A1CFC5C1F00FFD47E /* Pods_ApiClientTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ApiClientTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ApiClientTests.framework"; sourceTree = "<group>"; };
 		7C3D09901CFC60A700FFD47E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		7C44F0951D0AD9DD00681476 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		7C4576A21D144CF500CF9A44 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		7C4576A41D18254400CF9A44 /* Oauth2Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth2Service.swift; sourceTree = "<group>"; };
 		7C45CAB31CEDFDDD009CE382 /* Suto Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suto Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C45CAB61CEDFDDD009CE382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C45CABB1CEDFDDD009CE382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,15 +181,11 @@
 		7C45CAD91CEDFDDE009CE382 /* Suto_StreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suto_StreamUITests.swift; sourceTree = "<group>"; };
 		7C45CADB1CEDFDDE009CE382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C45CAE91CEDFFE2009CE382 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7C4BAECD1CEE39E300548A75 /* Pods_ApiClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ApiClient.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Pods_ApiClient.framework"; sourceTree = "<group>"; };
 		7C4BAED11CEE3A1600548A75 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		7C4BAED21CEE3A1600548A75 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
 		7C4BAED31CEE3A1600548A75 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework"; sourceTree = "<group>"; };
 		7C4BAED41CEE3A1600548A75 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		7C4BAED51CEE3A1600548A75 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
-		7C4BAED61CEE3A1600548A75 /* Pods_ApiClientTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ApiClientTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ApiClientTests.framework"; sourceTree = "<group>"; };
-		7C4BAED71CEE3A1600548A75 /* Pods_Suto_StreamTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Suto_StreamTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Suto_StreamTests.framework"; sourceTree = "<group>"; };
-		7C4BAED81CEE3A1600548A75 /* Pods_Suto_StreamUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Suto_StreamUITests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Suto_StreamUITests.framework"; sourceTree = "<group>"; };
 		7C4BAED91CEE3A1600548A75 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework"; sourceTree = "<group>"; };
 		7C4BAEDA1CEE3A1600548A75 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		7C4BAEDB1CEE3A1600548A75 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
@@ -264,7 +244,6 @@
 		7CA1AEF61CFC48210076551D /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7CA6E4BC1CEE05CE00F61144 /* HomeViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModeling.swift; sourceTree = "<group>"; };
 		7CA6E4BE1CEE087E00F61144 /* serviceLocate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceLocate.swift; sourceTree = "<group>"; };
-		7CA6E4C01CEE090600F61144 /* ApiClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiClient.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/ApiClient.framework"; sourceTree = "<group>"; };
 		7CA6E4C51CEE0D3700F61144 /* Pods_Suto_Stream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Suto_Stream.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Pods_Suto_Stream.framework"; sourceTree = "<group>"; };
 		7CAC95D01D0B0C86000E8808 /* SideMenuProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuProfileCell.swift; sourceTree = "<group>"; };
 		7CB6D54E1D01D5A6002CDA8D /* DefaultImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
@@ -278,8 +257,6 @@
 		7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCellViewModel.swift; sourceTree = "<group>"; };
 		7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_Stream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32AE8165EB1C2907A27712C /* Pods-Suto StreamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamUITests/Pods-Suto StreamUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB29E2CB1D3FB430C0262FC1 /* Pods_ApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE29CD9854922CE58F2A2CF5 /* Pods_ApiClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FC0F1646F2576F8EECFB39 /* Pods-Suto StreamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamTests/Pods-Suto StreamTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE09DF23BF1FE9B592426245 /* Pods-Suto Stream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto Stream.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suto Stream/Pods-Suto Stream.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -289,7 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C3D09861CFC5B3900FFD47E /* Pods_Suto_Stream.framework in Frameworks */,
+				7CEAA8AC1D211F2700E442F6 /* Pods_Suto_Stream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +274,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C05B62DC9DC1229C46660C /* Pods_Suto_StreamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +281,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8003A45CA60A25B5767B51FA /* Pods_Suto_StreamUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +523,7 @@
 				7C7BD8501D00752A00F6701A /* TwitchStreamService.swift */,
 				7C57EC801D08443F00AFC2BC /* TwitchStreamInfoService.swift */,
 				7C1BD7D01D072A0C00F9773A /* M3U8Parser.swift */,
+				7C4576A41D18254400CF9A44 /* Oauth2Service.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -617,15 +593,11 @@
 			isa = PBXGroup;
 			children = (
 				7C3D09901CFC60A700FFD47E /* Alamofire.framework */,
-				7C3D098A1CFC5C1F00FFD47E /* Pods_ApiClientTests.framework */,
 				7C4BAED11CEE3A1600548A75 /* Alamofire.framework */,
 				7C4BAED21CEE3A1600548A75 /* AlamofireObjectMapper.framework */,
 				7C4BAED31CEE3A1600548A75 /* DZNEmptyDataSet.framework */,
 				7C4BAED41CEE3A1600548A75 /* Kingfisher.framework */,
 				7C4BAED51CEE3A1600548A75 /* ObjectMapper.framework */,
-				7C4BAED61CEE3A1600548A75 /* Pods_ApiClientTests.framework */,
-				7C4BAED71CEE3A1600548A75 /* Pods_Suto_StreamTests.framework */,
-				7C4BAED81CEE3A1600548A75 /* Pods_Suto_StreamUITests.framework */,
 				7C4BAED91CEE3A1600548A75 /* PureLayout.framework */,
 				7C4BAEDA1CEE3A1600548A75 /* ReactiveCocoa.framework */,
 				7C4BAEDB1CEE3A1600548A75 /* Realm.framework */,
@@ -640,14 +612,8 @@
 				7C4BAEE41CEE3A1600548A75 /* SVProgressHUD.framework */,
 				7C4BAEE51CEE3A1600548A75 /* SwiftyJSON.framework */,
 				7C4BAEE61CEE3A1600548A75 /* Swinject.framework */,
-				7C4BAECD1CEE39E300548A75 /* Pods_ApiClient.framework */,
 				7CA6E4C51CEE0D3700F61144 /* Pods_Suto_Stream.framework */,
-				7CA6E4C01CEE090600F61144 /* ApiClient.framework */,
 				7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */,
-				6D0E20EAA5BFD6CF8E99BACD /* Pods_Suto_StreamTests.framework */,
-				202C6523E5F2D1252DC82101 /* Pods_Suto_StreamUITests.framework */,
-				BB29E2CB1D3FB430C0262FC1 /* Pods_ApiClient.framework */,
-				CE29CD9854922CE58F2A2CF5 /* Pods_ApiClientTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -665,7 +631,6 @@
 				7C45CAB11CEDFDDD009CE382 /* Resources */,
 				D4CA0CA380A1BB0A0AF8D3AF /* 📦 Embed Pods Frameworks */,
 				D61083C7A05CA8622BC47E88 /* 📦 Copy Pods Resources */,
-				7C3D09851CFC5B0B00FFD47E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -730,6 +695,11 @@
 					7C45CAB21CEDFDDD009CE382 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 9P59V98FJX;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					7C45CAC91CEDFDDE009CE382 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -983,6 +953,7 @@
 				7CA1AEF71CFC48210076551D /* IntroViewController.swift in Sources */,
 				7C728DF11D13FD27003B1599 /* HidingViewController.swift in Sources */,
 				7C7BD84A1D006B4B00F6701A /* StreamCellViewModel.swift in Sources */,
+				7C4576A51D18254400CF9A44 /* Oauth2Service.swift in Sources */,
 				7C728DFA1D144009003B1599 /* ChatEnableCell.swift in Sources */,
 				7C4576A31D144CF500CF9A44 /* SettingCell.swift in Sources */,
 				7C0406FA1CF59A61008D3D77 /* HomeCollectionViewController.swift in Sources */,
@@ -1093,8 +1064,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1112,6 +1085,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1140,8 +1114,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1152,6 +1128,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1164,16 +1141,96 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"@executable_path/Frameworks/**",
+				);
 				INFOPLIST_FILE = "Suto Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AMSlideMenu\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireObjectMapper\"",
+					"-framework",
+					"\"Async\"",
+					"-framework",
+					"\"BFPaperButton\"",
+					"-framework",
+					"\"DZNEmptyDataSet\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"DualSlideMenu\"",
+					"-framework",
+					"\"FlowSlideMenu\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LoremIpsum\"",
+					"-framework",
+					"\"MMDrawerController\"",
+					"-framework",
+					"\"MSDynamicsDrawerViewController\"",
+					"-framework",
+					"\"MobilePlayer\"",
+					"-framework",
+					"\"OAuthSwift\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxBlocking\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"RxTests\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SRKControls\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Spring\"",
+					"-framework",
+					"\"StatefulViewController\"",
+					"-framework",
+					"\"SugarRecord\"",
+					"-framework",
+					"\"SwiftKeychain\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Swinject\"",
+					"-framework",
+					"\"UIColor_BFPaperColors\"",
+					"-framework",
+					"\"iOS_Slide_Menu\"",
+					"-framework",
+					"\"p2_OAuth2\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "owned.Suto-Stream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
 				SWIFT_OBJC_BRIDGING_HEADER = "Suto Stream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1185,16 +1242,96 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"@executable_path/Frameworks/**",
+				);
 				INFOPLIST_FILE = "Suto Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AMSlideMenu\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireObjectMapper\"",
+					"-framework",
+					"\"Async\"",
+					"-framework",
+					"\"BFPaperButton\"",
+					"-framework",
+					"\"DZNEmptyDataSet\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"DualSlideMenu\"",
+					"-framework",
+					"\"FlowSlideMenu\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LoremIpsum\"",
+					"-framework",
+					"\"MMDrawerController\"",
+					"-framework",
+					"\"MSDynamicsDrawerViewController\"",
+					"-framework",
+					"\"MobilePlayer\"",
+					"-framework",
+					"\"OAuthSwift\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxBlocking\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"RxTests\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SRKControls\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Spring\"",
+					"-framework",
+					"\"StatefulViewController\"",
+					"-framework",
+					"\"SugarRecord\"",
+					"-framework",
+					"\"SwiftKeychain\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Swinject\"",
+					"-framework",
+					"\"UIColor_BFPaperColors\"",
+					"-framework",
+					"\"iOS_Slide_Menu\"",
+					"-framework",
+					"\"p2_OAuth2\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "owned.Suto-Stream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
 				SWIFT_OBJC_BRIDGING_HEADER = "Suto Stream-Bridging-Header.h";
 			};
 			name = Release;
