@@ -139,10 +139,10 @@ DEPENDENCIES:
   - PureLayout
   - Quick
   - ReactiveCocoa (~> 4.1)
-  - RxBlocking (~> 2.0)
+  - RxBlocking
   - RxCocoa (~> 2.0)
   - RxSwift (~> 2.0)
-  - RxTests (~> 2.0)
+  - RxTests
   - SDWebImage (~> 3.7)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
   - SRKControls (~> 3.0.1)
@@ -208,6 +208,6 @@ SPEC CHECKSUMS:
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
   UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
-PODFILE CHECKSUM: 3fe4af53f27e61ec2f0b828d46832fe52be5863e
+PODFILE CHECKSUM: 4518f85271beb3b1e810634918efac531b1350ee
 
 COCOAPODS: 1.0.0

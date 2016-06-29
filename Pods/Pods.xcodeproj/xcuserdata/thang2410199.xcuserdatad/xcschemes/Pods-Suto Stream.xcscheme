@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4FC93354014E0A4C4549A3E72D0475B0"
+               BlueprintIdentifier = "FADD3139A4E53814A00F2A530906D8E4"
                BuildableName = "Pods_Suto_Stream.framework"
                BlueprintName = "Pods-Suto Stream"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4FC93354014E0A4C4549A3E72D0475B0"
+            BlueprintIdentifier = "FADD3139A4E53814A00F2A530906D8E4"
             BuildableName = "Pods_Suto_Stream.framework"
             BlueprintName = "Pods-Suto Stream"
             ReferencedContainer = "container:Pods.xcodeproj">

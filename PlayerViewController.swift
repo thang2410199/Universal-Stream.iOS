@@ -12,10 +12,15 @@ import MediaPlayer
 import AVKit
 import MobilePlayer
 import PureLayout
+import BFPaperButton
 //import Player
 //import DFVideoPlayer
 
-class PlayerViewController : UIViewController
+protocol PlayerControllDelegate {
+    func OnPlayerTapped()
+}
+
+class PlayerViewController : UIViewController, PlayerControllDelegate
 {
     var viewModel : PlayerViewModel!
     var player : AVPlayer!
@@ -24,7 +29,18 @@ class PlayerViewController : UIViewController
     var playerController : AVPlayerViewController? = AVPlayerViewController()
     var IsPlaying  = false
     
-    var playerViewContainer : UIView!
+    var playerViewContainer : SutoPlayerContainer!
+    var playerControlContainer : UIView!
+    
+    var PlayPauseButton : BFPaperButton!
+    var ToggleFullScreenButton : BFPaperButton!
+    
+    // Chat area
+    var FooterContainerView : UIView!
+    
+    var statusBarHidden : Bool = true
+    var isLockFullScreen : Bool = false
+    var isFullScreen : Bool = false
     
     //var StreamQualities = [StreamQuality]
     
@@ -41,7 +57,12 @@ class PlayerViewController : UIViewController
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return .AllButUpsideDown
+        if(isFullScreen) {
+            return .Landscape
+        }
+        else {
+            return .Portrait
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -53,12 +74,10 @@ class PlayerViewController : UIViewController
         
     }
     
-    override func viewWillLayoutSubviews() {
-        playerLayer.frame = playerViewContainer.bounds
+    override func viewDidLayoutSubviews() {
     }
     
     override func viewWillDisappear(animated: Bool) {
-        player.pause()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
@@ -66,7 +85,8 @@ class PlayerViewController : UIViewController
         if(parent == nil)
         {
             //Handle removing player
-
+            player.pause()
+            self.showStatusBar()
 //            playerController?.view.removeFromSuperview()
 //            playerController?.removeFromParentViewController()
             
@@ -79,14 +99,21 @@ class PlayerViewController : UIViewController
             self.SetFullScreen(true, animated: true)
         } else {
             print("Portrait")
+            if(isLockFullScreen) {
+                self.SetFullScreen(false, animated: true)
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideStatusBar()
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:"<", style:.Plain, target:self, action: #selector(PlayerViewController.backButtonHit))
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        //extend the view to screen
+        self.edgesForExtendedLayout = .All
         
         self.view.backgroundColor = AppConstant.AppWhite
         //self.tabBarController?.hidesBottomBarWhenPushed = true
@@ -125,17 +152,61 @@ class PlayerViewController : UIViewController
         //playerController.showsPlaybackControls = true
 //        playerController.title = "testing"
         
-        playerViewContainer = UIView()
+        playerViewContainer = SutoPlayerContainer()
+        playerViewContainer.delegate = self
         //playerViewContainer.addSubview(playerController.view)
         
         //self.addChildViewController(playerController)
-        self.view.addSubview(playerViewContainer)
         
         playerViewContainer.layer.insertSublayer(playerLayer, atIndex: 0)
+        
+        PlayPauseButton = BFPaperButton(raised: false)
+        PlayPauseButton.cornerRadius = 0
+        PlayPauseButton.setImage(UIImage.airPlaneIcon(size: CGSize(width: 40, height: 40), color: AppConstant.AppWhite), forState: .Normal)
+        PlayPauseButton.backgroundFadeColor = AppConstant.TwitchDarkGray050
+        PlayPauseButton.addTarget(self, action: #selector(PlayerViewController.OnPlayPauseTapped), forControlEvents: .TouchUpInside)
+        
+        ToggleFullScreenButton = BFPaperButton(raised: false)
+        ToggleFullScreenButton.cornerRadius = 0
+        ToggleFullScreenButton.setImage(UIImage.cameraIcon(size: CGSize(width: 40, height: 40), color: AppConstant.AppWhite), forState: .Normal)
+        ToggleFullScreenButton.backgroundFadeColor = AppConstant.TwitchDarkGray050
+        ToggleFullScreenButton.addTarget(self, action: #selector(PlayerViewController.OnToggleFullScreen), forControlEvents: .TouchUpInside)
+        
+        playerControlContainer = UIView()
+        playerControlContainer.backgroundColor = AppConstant.TwitchDarkGray
+        playerControlContainer.addSubview(playerViewContainer)
+        playerControlContainer.addSubview(PlayPauseButton)
+        playerControlContainer.addSubview(ToggleFullScreenButton)
+        
+        self.view.addSubview(playerControlContainer)
+        
+        
+        FooterContainerView = UIView()
+        FooterContainerView.backgroundColor = AppConstant.AppColor
+        
+        self.view.addSubview(FooterContainerView)
         
         //Layout
         self.SetFullScreen(false, animated: false)
         //playerController.view.autoPinEdgesToSuperviewEdges()
+        
+        playerViewContainer.autoPinEdgeToSuperviewEdge(.Top)
+        playerViewContainer.autoPinEdgeToSuperviewEdge(.Left)
+        playerViewContainer.autoPinEdgeToSuperviewEdge(.Right)
+        playerViewContainer.autoMatchDimension(.Height, toDimension: .Width, ofView: playerViewContainer, withMultiplier: 9/16)
+        
+        PlayPauseButton.autoSetDimensionsToSize(CGSize(width: 44, height: 44))
+        PlayPauseButton.autoPinEdgeToSuperviewEdge(.Left, withInset: 8)
+        PlayPauseButton.autoPinEdgeToSuperviewEdge(.Bottom, withInset: 8)
+        
+        ToggleFullScreenButton.autoSetDimensionsToSize(CGSize(width: 44, height: 44))
+        ToggleFullScreenButton.autoPinEdgeToSuperviewEdge(.Right, withInset: 8)
+        ToggleFullScreenButton.autoPinEdgeToSuperviewEdge(.Bottom, withInset: 8)
+        
+        FooterContainerView.autoPinEdge(.Top, toEdge: .Bottom, ofView: playerControlContainer)
+        FooterContainerView.autoPinEdgeToSuperviewEdge(.Bottom)
+        FooterContainerView.autoPinEdgeToSuperviewEdge(.Left)
+        FooterContainerView.autoPinEdgeToSuperviewEdge(.Right)
         
         
         viewModel.GetData({ data in
@@ -158,33 +229,48 @@ class PlayerViewController : UIViewController
         })
     }
     
+    func hideStatusBar(){
+        statusBarHidden = true
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    func showStatusBar(){
+        statusBarHidden = false
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
-        return true
+        return statusBarHidden
+    }
+    
+    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
+        return .Slide
     }
     
     var constraints : [NSLayoutConstraint] = []
     
     func SetFullScreen(value : Bool, animated : Bool) {
         if(constraints.count > 0) {
-            playerViewContainer.removeConstraints(constraints)
+            playerControlContainer.removeConstraints(constraints)
+            self.view.removeConstraints(constraints)
             constraints.removeAll()
         }
-        
+        var orientation = UIInterfaceOrientation.LandscapeRight.rawValue
         if(value) {
-            constraints = playerViewContainer.autoPinEdgesToSuperviewEdges()
+            constraints += playerControlContainer.autoPinEdgesToSuperviewEdges()
+            orientation = UIInterfaceOrientation.LandscapeRight.rawValue
             //playerController.modalPresentationStyle = .FullScreen
         }
         else
         {
-            constraints += [playerViewContainer.autoPinEdgeToSuperviewEdge(.Top)]
-            constraints += [playerViewContainer.autoPinEdgeToSuperviewEdge(.Left)]
-            constraints += [playerViewContainer.autoPinEdgeToSuperviewEdge(.Right)]
-            constraints += [playerViewContainer.autoSetDimension(.Height, toSize: AppConstant.AppWidth * 9 / 16 + 100)]
-
+            constraints += [playerControlContainer.autoPinEdgeToSuperviewEdge(.Top)]
+            constraints += [playerControlContainer.autoPinEdgeToSuperviewEdge(.Left)]
+            constraints += [playerControlContainer.autoPinEdgeToSuperviewEdge(.Right)]
+            constraints += [playerControlContainer.autoSetDimension(.Height, toSize: 500)]
+            orientation = UIInterfaceOrientation.Portrait.rawValue
             //playerController.modalPresentationStyle = .None
         }
-        
-        playerLayer.frame = playerViewContainer.bounds
+        UIDevice.currentDevice().setValue(orientation, forKey: "orientation")
         //player.setFullscreen(value, animated: animated)
     }
     
@@ -200,5 +286,22 @@ class PlayerViewController : UIViewController
     func backButtonHit()
     {
         self.navigationController?.popViewControllerAnimated(true)
+    }
+}
+
+extension PlayerViewController {
+    
+    func OnPlayPauseTapped() {
+        
+    }
+    
+    func OnToggleFullScreen() {
+        isFullScreen = !isFullScreen
+        SetFullScreen(isFullScreen, animated: true)
+        UIViewController.attemptRotationToDeviceOrientation()
+    }
+    
+    func OnPlayerTapped() {
+        
     }
 }

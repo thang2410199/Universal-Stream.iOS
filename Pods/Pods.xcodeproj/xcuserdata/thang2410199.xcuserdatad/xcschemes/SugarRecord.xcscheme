@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47119C41AC74AB004A2BA1781C7E026F"
+               BlueprintIdentifier = "F1D225E8343BA622B95E261572A6A96F"
                BuildableName = "SugarRecord.framework"
                BlueprintName = "SugarRecord"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "47119C41AC74AB004A2BA1781C7E026F"
+            BlueprintIdentifier = "F1D225E8343BA622B95E261572A6A96F"
             BuildableName = "SugarRecord.framework"
             BlueprintName = "SugarRecord"
             ReferencedContainer = "container:Pods.xcodeproj">
