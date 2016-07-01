@@ -33,6 +33,8 @@ PODS:
   - ObjectMapper (1.3.0)
   - p2.OAuth2 (2.2.6):
     - SwiftKeychain (~> 1.0)
+  - pop (1.0.9)
+  - Preheat (1.0)
   - PureLayout (3.0.1)
   - Quick (0.9.2)
   - ReactiveCocoa (4.1.0):
@@ -136,6 +138,8 @@ DEPENDENCIES:
   - OAuthSwift (~> 0.5.0)
   - ObjectMapper (~> 1.3)
   - p2.OAuth2
+  - pop (~> 1.0)
+  - Preheat
   - PureLayout
   - Quick
   - ReactiveCocoa (~> 4.1)
@@ -187,6 +191,8 @@ SPEC CHECKSUMS:
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   p2.OAuth2: a89edc5660aca8a5349882ee9008de793bbbbcd0
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Preheat: a68422be3ca8a5f27d1e11e628a5c36147454a04
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
@@ -208,6 +214,6 @@ SPEC CHECKSUMS:
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
   UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
-PODFILE CHECKSUM: 4518f85271beb3b1e810634918efac531b1350ee
+PODFILE CHECKSUM: 5c112549db09efb6c8ef548bf18dcc03147cb8bb
 
 COCOAPODS: 1.0.0

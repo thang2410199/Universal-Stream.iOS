@@ -27,8 +27,10 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
     
     public var viewModel: HomeViewModeling?
     
+    var loadedIndex = 0
+    
     public init() {
-        var layout = UICollectionViewFlowLayout()
+        let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 8
         layout.sectionInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -91,7 +93,7 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
             initilized = true
             //refreshControl.beginRefreshing()
             NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeCollectionViewController.OnAppAction(_:)), name: AppAction.Key, object: nil)
-            viewModel?.startSearch()
+            viewModel?.GetData()
         }
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -164,6 +166,13 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
 
 // MARK: UITableViewDataSource
 extension HomeCollectionViewController {
+    
+    public override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row > loadedIndex {
+            loadedIndex = indexPath.row
+            PopAnimate(cell)
+        }
+    }
     
     // Custom section as a header
     public override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -254,7 +263,8 @@ extension HomeCollectionViewController {
 extension HomeCollectionViewController {
     public func viewControllerScrollViewGoesToTop()
     {
-        self.collectionView?.setContentOffset(CGPointZero, animated: true)
+        self.collectionView?.setContentOffset(CGPointMake(collectionView!.contentOffset.x,
+            -collectionView!.contentInset.top), animated: true)
     }
 }
 

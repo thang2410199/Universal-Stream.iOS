@@ -111,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
-            landmarkName = "startSearch()"
+            landmarkName = "GetData()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -127,7 +127,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "startSearch()"
+            landmarkName = "GetData()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,12 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "supportedInterfaceOrientations()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "viewWillDisappear(_:)"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "backButtonHit()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -329,13 +329,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "StreamListController"
-            landmarkType = "3">
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -505,11 +505,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -521,11 +521,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "refresh()"
             landmarkType = "5">
          </BreakpointContent>
@@ -553,11 +553,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -569,11 +569,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -585,11 +585,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -745,11 +745,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListViewModel.swift"
-            timestampString = "487865618.605635"
+            timestampString = "488980169.643769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "GetData(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -761,12 +761,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "tableView(_:willDisplayCell:forRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -777,13 +777,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "5">
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -793,12 +793,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "tableView(_:willDisplayCell:forRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -985,11 +985,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListViewModel.swift"
-            timestampString = "487865618.605635"
+            timestampString = "488980169.643769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "Reset()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1017,12 +1017,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "GetData()"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "GetData(_:)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1065,11 +1065,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1081,13 +1081,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "StreamListController"
-            landmarkType = "3">
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "tableView(_:willDisplayCell:forRowAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1129,11 +1129,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1145,13 +1145,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "GetData()"
-            landmarkType = "5">
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1161,12 +1161,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "GetData()"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1209,13 +1209,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "init(coder:)"
-            landmarkType = "5">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1225,11 +1225,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1241,12 +1241,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1257,11 +1257,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1273,13 +1273,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1289,11 +1289,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1305,12 +1305,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "init(coder:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "init()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1353,13 +1353,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "Refresh()"
-            landmarkType = "5">
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1369,11 +1369,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489063653.438033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1401,13 +1401,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1433,13 +1433,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2350,7 +2350,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "didMoveToParentViewController(_:)"
+            landmarkName = "viewWillDisappear(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2377,11 +2377,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "HomeCollectionViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -2393,11 +2393,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -2409,11 +2409,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "init()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2457,11 +2457,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489067289.534614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "viewControllerScrollViewGoesToTop()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2473,11 +2473,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2633,11 +2633,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
+            timestampString = "489074932.472706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -2649,11 +2649,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
+            timestampString = "489074932.472706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "numberOfSectionsInTableView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -2665,12 +2665,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2681,12 +2681,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "tableView(_:willDisplayCell:forRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2713,11 +2713,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Suto Stream/AppDelegate.swift"
-            timestampString = "488373615.31568"
+            timestampString = "489074511.398852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "getControllerForLaunching()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2729,11 +2729,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamListViewModel.swift"
-            timestampString = "487865618.605635"
+            timestampString = "488979723.167128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "StreamListViewModel"
             landmarkType = "3">
          </BreakpointContent>
@@ -2744,28 +2744,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StreamListController.swift"
-            timestampString = "488710033.939568"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VideoQualityCell.swift"
-            timestampString = "488302530.681486"
+            timestampString = "489059606.932413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "awakeFromNib()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2777,91 +2761,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
+            timestampString = "489074932.472706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SettingViewController.swift"
-            timestampString = "488364658.393089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SettingViewController.swift"
-            timestampString = "488364767.47565"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "shouldAutorotate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2873,11 +2777,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SettingViewController.swift"
-            timestampString = "488364778.356063"
+            timestampString = "489074932.472706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "supportedInterfaceOrientations()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2969,11 +2873,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2985,11 +2889,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "settingsButtonTapped()"
             landmarkType = "5">
             <Locations>
@@ -3048,11 +2952,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "settingsButtonTapped()"
             landmarkType = "5">
          </BreakpointContent>
@@ -3080,11 +2984,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "OnAppAction(_:)"
             landmarkType = "5">
             <Locations>
@@ -3143,11 +3047,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "OnAppAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -3175,11 +3079,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeCollectionViewController.swift"
-            timestampString = "488710033.939568"
+            timestampString = "489064142.285257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -3388,8 +3292,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "PlayerViewController"
-            landmarkType = "3">
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3452,8 +3356,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
             endingLineNumber = "83"
-            landmarkName = "didMoveToParentViewController(_:)"
-            landmarkType = "5">
+            landmarkName = "PlayerViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3468,7 +3372,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "221"
             endingLineNumber = "221"
-            landmarkName = "hideStatusBar()"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3484,7 +3388,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "219"
             endingLineNumber = "219"
-            landmarkName = "hideStatusBar()"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3516,8 +3420,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "290"
             endingLineNumber = "290"
-            landmarkName = "OnPlayerTapped()"
-            landmarkType = "5">
+            landmarkName = "PlayerViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3532,8 +3436,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "291"
             endingLineNumber = "291"
-            landmarkName = "OnPlayerTapped()"
-            landmarkType = "5">
+            landmarkName = "PlayerViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3548,8 +3452,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "292"
             endingLineNumber = "292"
-            landmarkName = "OnPlayerTapped()"
-            landmarkType = "5">
+            landmarkName = "PlayerViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -3596,7 +3500,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "247"
             endingLineNumber = "247"
-            landmarkName = "SetFullScreen(_:animated:)"
+            landmarkName = "preferredStatusBarUpdateAnimation()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3628,7 +3532,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "240"
             endingLineNumber = "240"
-            landmarkName = "SetFullScreen(_:animated:)"
+            landmarkName = "showStatusBar()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3644,7 +3548,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "supportedInterfaceOrientations()"
+            landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3660,7 +3564,215 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "287"
             endingLineNumber = "287"
-            landmarkName = "OnToggleFullScreen()"
+            landmarkName = "backButtonHit()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreamListController.swift"
+            timestampString = "489063653.438033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "StreamListController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreamListController.swift"
+            timestampString = "489064142.285257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Preheat/Sources/PreheatController.swift"
+            timestampString = "488986088.880439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Preheat/Sources/PreheatController.swift"
+            timestampString = "488986130.314385"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "init(view:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Preheat/Sources/PreheatController.swift"
+            timestampString = "488986196.34131"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIImageView.swift"
+            timestampString = "489060158.40333"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "sd_setImageWithURLWithFade(_:placeholderImage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIImageView.swift"
+            timestampString = "489060385.133605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "sd_setImageWithURLWithFade(_:placeholderImage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIImageView.swift"
+            timestampString = "489060385.133605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "sd_setImageWithURLWithFade(_:placeholderImage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIImageView.swift"
+            timestampString = "489060385.133605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "sd_setImageWithURLWithFade(_:placeholderImage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIImageView.swift"
+            timestampString = "489060263.619413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "sd_setImageWithURLWithFade(_:placeholderImage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Suto Stream/AppDelegate.swift"
+            timestampString = "489074511.398852"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Suto Stream/AppDelegate.swift"
+            timestampString = "489074511.398852"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SettingViewController.swift"
+            timestampString = "489074932.472706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "DoneDidPressed()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

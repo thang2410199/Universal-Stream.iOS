@@ -13,6 +13,7 @@ import FlowSlideMenu
 import DualSlideMenu
 import MSDynamicsDrawerViewController
 import DropDown
+import ObjectMapper
 
 let oauth2NotificationKey = "AppLaunchedWithURLNotification"
 
@@ -24,8 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var IsRunning = false
     static var CurrentApp : AppDelegate!
     static var AppSetting : ISetingAdapter!
+    static var SutoAppSetting : SutoStreamSetting!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        AppDelegate.SutoAppSetting = SutoStreamSetting.LoadSetting()
         
         AppDelegate.CurrentApp = self
         AppDelegate.IsRunning = true
@@ -118,6 +122,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        AppDelegate.SutoAppSetting.SaveSetting()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -131,6 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        AppDelegate.SutoAppSetting.SaveSetting()
         self.saveContext()
     }
 

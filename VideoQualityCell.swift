@@ -15,7 +15,6 @@ import DropDown
 class VideoQualityCell : UITableViewCell, ISettingCell {
     
     var comboBox : SRKComboBox!
-    var dropDown : DropDown!
     var videoQuality : UILabel!
     weak var delegateForComboBox:SRKComboBoxDelegate?
     
@@ -37,23 +36,20 @@ class VideoQualityCell : UITableViewCell, ISettingCell {
     func commonInit() {
         comboBox = SRKComboBox()
         //myComboBox.delegate = self
+        comboBox.textColor = AppConstant.TwitchDarkGray050
         comboBox.textAlignment = .Center
         comboBox.borderStyle = .RoundedRect
-        
-        dropDown = DropDown()
-        dropDown.anchorView = self.contentView
-        dropDown.dismissMode = .Automatic
         
         videoQuality = UILabel()
         videoQuality.textAlignment = .Right
         
         // Layout
-        //self.contentView.addSubview(comboBox)
-        self.contentView.addSubview(videoQuality)
+        self.contentView.addSubview(comboBox)
+        //self.contentView.addSubview(videoQuality)
         
-        videoQuality.autoPinEdgeToSuperviewEdge(.Right, withInset: 8)
-        videoQuality.autoSetDimensionsToSize(CGSize(width: 100, height: 30))
-        videoQuality.autoAlignAxisToSuperviewAxis(.Horizontal)
+        comboBox.autoPinEdgeToSuperviewEdge(.Right, withInset: 8)
+        comboBox.autoSetDimensionsToSize(CGSize(width: 100, height: 30))
+        comboBox.autoAlignAxisToSuperviewAxis(.Horizontal)
         
     }
 

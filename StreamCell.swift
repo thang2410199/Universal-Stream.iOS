@@ -33,7 +33,7 @@ class StreamCell : UITableViewCell {
             //self.numberOfViewer.text = "\(viewModel?.stream.viewers)"
             self.status.text = viewModel?.stream.channel?.status
             let url = NSURL(string: (viewModel?.stream.preview?.medium)!)
-            self.preview?.sd_setImageWithURL(url, placeholderImage : UIImage.defaultStreamPreview)
+            self.preview?.sd_setImageWithURLWithFade(url, placeholderImage : UIImage.defaultStreamPreview)
         }
     }
     

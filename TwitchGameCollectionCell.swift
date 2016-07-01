@@ -17,7 +17,7 @@ class TwitchGameCollectionCell : UICollectionViewCell{
         didSet {
             self.gameName.text = viewModel?.game?.game?.name
             let url = NSURL(string: (self.viewModel?.game?.game?.box?.large)!)
-            self.gameThumbnail.sd_setImageWithURL(url, placeholderImage: UIImage.defaultGameBox)
+            self.gameThumbnail.sd_setImageWithURLWithFade(url, placeholderImage: UIImage.defaultGameBox)
             self.gameNameBackgroundView.backgroundColor = AppConstant.TwitchDarkGray050
         }
     }

@@ -17,6 +17,9 @@ target 'Suto Stream' do
     # placeholder
     pod 'LoremIpsum', '~> 1.0'
     
+    # Prefetch content
+    pod 'Preheat'
+    
     # auto layout
     pod 'PureLayout'
     
@@ -65,8 +68,7 @@ target 'Suto Stream' do
     
     #animation
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
-    
-    use_frameworks!
+    pod 'pop', '~> 1.0'
     
     # Pods for ApiClient
     #networking

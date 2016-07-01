@@ -20,7 +20,7 @@ class TwitchGameCell : UITableViewCell{
             self.gameName?.text = viewModel?.game?.game?.name
             let url = NSURL(string: (self.viewModel?.game?.game?.box?.large)!)
             let defaultImage = UIImage(named: "gameBox")
-            self.gameThumbnail.sd_setImageWithURL(url, placeholderImage: defaultImage)
+            self.gameThumbnail.sd_setImageWithURLWithFade(url, placeholderImage: defaultImage)
 //            tagLabel.text = viewModel?.tagText
 //            imageSizeLabel.text = viewModel?.pageImageSizeText
             

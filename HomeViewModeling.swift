@@ -14,7 +14,7 @@ public protocol HomeViewModeling {
     var searching: AnyProperty<Bool> { get }
     var errorMessage: AnyProperty<String?> { get }
     
-    func startSearch()
+    func GetData()
     func refresh()
     var loadNextPage: Action<(), (), NoError> { get }
     
@@ -23,5 +23,6 @@ public protocol HomeViewModeling {
     func Authorize(onComplete: CompleteBlock, onError: ErrorBlock, context : AnyObject)
 }
 
+public typealias CompleteHandler = (() -> Void)
 public typealias CompleteBlock = ((data : AnyObject?) -> Void)
 public typealias ErrorBlock = (() -> Void)

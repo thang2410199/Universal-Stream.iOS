@@ -56,7 +56,7 @@ public final class HomeViewController : UITableViewController {
         
         if !initilized {
             initilized = true
-            viewModel?.startSearch()
+            viewModel?.GetData()
         }
     }
     

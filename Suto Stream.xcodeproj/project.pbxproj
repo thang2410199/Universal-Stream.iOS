@@ -57,6 +57,7 @@
 		7C4BAF161CEF010400548A75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4BAF151CEF010400548A75 /* HomeViewController.swift */; };
 		7C57EC7F1D08410800AFC2BC /* IM3U8Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57EC7E1D08410800AFC2BC /* IM3U8Parser.swift */; };
 		7C57EC811D08443F00AFC2BC /* TwitchStreamInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57EC801D08443F00AFC2BC /* TwitchStreamInfoService.swift */; };
+		7C5C76701D25797200CFE2AE /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C766F1D25797200CFE2AE /* AppSetting.swift */; };
 		7C66F70E1D2141DB00DA87D3 /* SutoPlayerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66F70D1D2141DB00DA87D3 /* SutoPlayerContainer.swift */; };
 		7C728DD21D1171B2003B1599 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C728DD11D1171B1003B1599 /* UIViewController.swift */; };
 		7C728DD41D1175DF003B1599 /* SideMenuProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C728DD31D1175DF003B1599 /* SideMenuProfile.swift */; };
@@ -94,6 +95,7 @@
 		7C7BD8571D0199B000F6701A /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BD8561D0199B000F6701A /* SettingService.swift */; };
 		7C7BD8591D019E5F00F6701A /* SettingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BD8581D019E5F00F6701A /* SettingAdapter.swift */; };
 		7C7BD85C1D01AECF00F6701A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BD85B1D01AECF00F6701A /* String.swift */; };
+		7C8329801D266B2000CED836 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83297F1D266B2000CED836 /* UIImageView.swift */; };
 		7CA1AEF71CFC48210076551D /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1AEF61CFC48210076551D /* IntroViewController.swift */; };
 		7CA6E4BD1CEE05CE00F61144 /* HomeViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E4BC1CEE05CE00F61144 /* HomeViewModeling.swift */; };
 		7CA6E4BF1CEE087E00F61144 /* serviceLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E4BE1CEE087E00F61144 /* serviceLocate.swift */; };
@@ -107,6 +109,8 @@
 		7CE8EC271CEF57CA00471A46 /* TwitchGameCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC261CEF57CA00471A46 /* TwitchGameCellModeling.swift */; };
 		7CE8EC291CEF57D700471A46 /* TwitchGameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */; };
 		7CEAA8AC1D211F2700E442F6 /* Pods_Suto_Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */; };
+		7CF840641D2685950027210C /* CellAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF840631D2685950027210C /* CellAnimationHelper.swift */; };
+		7CF840661D26A1B40027210C /* TwitchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF840651D26A1B40027210C /* TwitchUser.swift */; };
 		8C08B5E5383E200869EB9A4E /* Pods_Suto_StreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DF1B27B82FC833DBC9940 /* Pods_Suto_StreamUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +211,7 @@
 		7C4BAF151CEF010400548A75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C57EC7E1D08410800AFC2BC /* IM3U8Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IM3U8Parser.swift; sourceTree = "<group>"; };
 		7C57EC801D08443F00AFC2BC /* TwitchStreamInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitchStreamInfoService.swift; path = ApiClientTemp/TwitchStreamInfoService.swift; sourceTree = "<group>"; };
+		7C5C766F1D25797200CFE2AE /* AppSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		7C66F70D1D2141DB00DA87D3 /* SutoPlayerContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SutoPlayerContainer.swift; sourceTree = "<group>"; };
 		7C728DD11D1171B1003B1599 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7C728DD31D1175DF003B1599 /* SideMenuProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuProfile.swift; sourceTree = "<group>"; };
@@ -246,6 +251,7 @@
 		7C7BD8561D0199B000F6701A /* SettingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
 		7C7BD8581D019E5F00F6701A /* SettingAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingAdapter.swift; sourceTree = "<group>"; };
 		7C7BD85B1D01AECF00F6701A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7C83297F1D266B2000CED836 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7CA1AEF61CFC48210076551D /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7CA6E4BC1CEE05CE00F61144 /* HomeViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModeling.swift; sourceTree = "<group>"; };
 		7CA6E4BE1CEE087E00F61144 /* serviceLocate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceLocate.swift; sourceTree = "<group>"; };
@@ -260,6 +266,8 @@
 		7CE8EC241CEF56A900471A46 /* TwitchGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCell.swift; sourceTree = "<group>"; };
 		7CE8EC261CEF57CA00471A46 /* TwitchGameCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCellModeling.swift; sourceTree = "<group>"; };
 		7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCellViewModel.swift; sourceTree = "<group>"; };
+		7CF840631D2685950027210C /* CellAnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAnimationHelper.swift; sourceTree = "<group>"; };
+		7CF840651D26A1B40027210C /* TwitchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUser.swift; sourceTree = "<group>"; };
 		7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_Stream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32AE8165EB1C2907A27712C /* Pods-Suto StreamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamUITests/Pods-Suto StreamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D34DF1B27B82FC833DBC9940 /* Pods_Suto_StreamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_StreamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,6 +346,8 @@
 				7C1EA5AC1CF720B000905A9F /* UIColorHelper.swift */,
 				7CB6D54E1D01D5A6002CDA8D /* DefaultImage.swift */,
 				7C728DD11D1171B1003B1599 /* UIViewController.swift */,
+				7C83297F1D266B2000CED836 /* UIImageView.swift */,
+				7CF840631D2685950027210C /* CellAnimationHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -540,6 +550,7 @@
 		7C7BD84E1D0074D700F6701A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7CF840651D26A1B40027210C /* TwitchUser.swift */,
 				7C0E1A281CFC78D80060DA4F /* TwitchChannel.swift */,
 				7C0E1A291CFC78D80060DA4F /* TwitchEndpoint.swift */,
 				7C0E1A2A1CFC78D80060DA4F /* TwitchEndpointResult.swift */,
@@ -554,6 +565,7 @@
 				7C7BD83E1D005A8E00F6701A /* TwitchStream.swift */,
 				7C0C03611D05C7EF0033BCED /* TwitchChannelAccess.swift */,
 				7C0C03631D05C9070033BCED /* TwitchStreamInfo.swift */,
+				7C5C766F1D25797200CFE2AE /* AppSetting.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -930,6 +942,7 @@
 				7C44F0961D0AD9DD00681476 /* SideMenuViewController.swift in Sources */,
 				7C1EA5AA1CF71DFF00905A9F /* AppConstant.swift in Sources */,
 				7C0E1A441CFC78D80060DA4F /* TwitchGameBox.swift in Sources */,
+				7C5C76701D25797200CFE2AE /* AppSetting.swift in Sources */,
 				7C728DE81D11892C003B1599 /* PaintCodeIcon8.swift in Sources */,
 				7C0407781CF5ED95008D3D77 /* SutoTabBarController.swift in Sources */,
 				7C0E1A371CFC78D80060DA4F /* IDataSource.swift in Sources */,
@@ -939,6 +952,7 @@
 				7C728DD21D1171B2003B1599 /* UIViewController.swift in Sources */,
 				7C728DF61D141DF3003B1599 /* SWRevealViewController.m in Sources */,
 				7C728DE51D11892C003B1599 /* PaintCodeIcon5.swift in Sources */,
+				7CF840641D2685950027210C /* CellAnimationHelper.swift in Sources */,
 				7C728DEB1D11923B003B1599 /* SettingViewController.swift in Sources */,
 				7CE8EC251CEF56A900471A46 /* TwitchGameCell.swift in Sources */,
 				7C4BAF161CEF010400548A75 /* HomeViewController.swift in Sources */,
@@ -975,6 +989,8 @@
 				7C728DEF1D13FCFE003B1599 /* HidingNavigationBarManagerDelegate.swift in Sources */,
 				7C57EC811D08443F00AFC2BC /* TwitchStreamInfoService.swift in Sources */,
 				7CE8BF661D002F6A006E631A /* IntroOneViewController.swift in Sources */,
+				7CF840661D26A1B40027210C /* TwitchUser.swift in Sources */,
+				7C8329801D266B2000CED836 /* UIImageView.swift in Sources */,
 				7C0E1A491CFC78D80060DA4F /* TwitchTopGameService.swift in Sources */,
 				7C0C03621D05C7F10033BCED /* TwitchChannelAccess.swift in Sources */,
 				7C0E1A3A1CFC78D80060DA4F /* IWebService.swift in Sources */,

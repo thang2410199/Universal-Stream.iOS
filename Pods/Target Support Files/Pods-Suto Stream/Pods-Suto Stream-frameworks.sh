@@ -100,6 +100,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MobilePlayer/MobilePlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Preheat/Preheat.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
@@ -120,6 +121,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/UIColor+BFPaperColors/UIColor_BFPaperColors.framework"
   install_framework "$BUILT_PRODUCTS_DIR/iOS-Slide-Menu/iOS_Slide_Menu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/p2.OAuth2/p2_OAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AMSlideMenu/AMSlideMenu.framework"
@@ -138,6 +140,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MobilePlayer/MobilePlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Preheat/Preheat.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
@@ -158,4 +161,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/UIColor+BFPaperColors/UIColor_BFPaperColors.framework"
   install_framework "$BUILT_PRODUCTS_DIR/iOS-Slide-Menu/iOS_Slide_Menu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/p2.OAuth2/p2_OAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi

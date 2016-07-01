@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FADD3139A4E53814A00F2A530906D8E4"
+               BlueprintIdentifier = "6B01B35859B0C0582D08DC901C567240"
                BuildableName = "Pods_Suto_Stream.framework"
                BlueprintName = "Pods-Suto Stream"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FADD3139A4E53814A00F2A530906D8E4"
+            BlueprintIdentifier = "6B01B35859B0C0582D08DC901C567240"
             BuildableName = "Pods_Suto_Stream.framework"
             BlueprintName = "Pods-Suto Stream"
             ReferencedContainer = "container:Pods.xcodeproj">

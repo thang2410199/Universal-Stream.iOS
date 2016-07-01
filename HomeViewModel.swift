@@ -51,7 +51,7 @@ public final class HomeViewModel : HomeViewModeling {
     public func refresh() -> Void {
         self.topGameService.Reset()
         _cellModels.value.removeAll()
-        startSearch()
+        GetData()
     }
     
     public init(endpointService : DataSource<TwitchEndpointResult>,
@@ -60,7 +60,7 @@ public final class HomeViewModel : HomeViewModeling {
         self.topGameService = topGameService
     }
     
-    public func startSearch() {
+    public func GetData() {
         func toCellModel(game : TwitchTopGame) -> TwitchGameCellModeling {
             return TwitchGameCellViewModel(game: game) as TwitchGameCellModeling
         }

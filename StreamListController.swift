@@ -8,11 +8,19 @@
 
 import Foundation
 import UIKit
+import SDWebImage
+import Preheat
+import ReactiveCocoa
+import Spring
+import pop
 
-public class StreamListController : UITableViewController, UIGestureRecognizerDelegate {    
+public class StreamListController : UITableViewController, UIGestureRecognizerDelegate {
     var initialized = false
     
     var viewModel : StreamListViewModel
+    var preheatController: PreheatController<UITableView>!
+    
+    var loadedIndex = 0
     
     let streamCellIdentifier = "TwitchStreamCell";
     public var topGame : TwitchTopGame?
@@ -65,7 +73,7 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         process.tintColor = AppConstant.AppColor
         process.translatesAutoresizingMaskIntoConstraints = false
         footer.addSubview(process)
-        process.startAnimating()
+        //process.startAnimating()
         //process.autoSetDimensionsToSize(CGSize(width: 40,height: 40))
         //process.autoCenterInSuperview()
         
@@ -86,17 +94,27 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
             
             self.refreshControl = UIRefreshControl()
             self.refreshControl!.layer.zPosition = -1
-            self.refreshControl!.attributedTitle = NSAttributedString(string : "Pull to refresh")
             self.refreshControl!.beginRefreshing()
             self.refreshControl!.addTarget(self, action: #selector(StreamListController.Refresh), forControlEvents: .ValueChanged)
             
-            self.viewModel.dataBinding.producer.on(
+            preheatController = PreheatController(view : self.tableView!)
+            preheatController.enabled = true
+            preheatController.handler = { [weak self] in
+                self?.preheatWindowChanged(addedIndexPaths: $0, removedIndexPaths: $1)
+            }
+            
+            self.viewModel.dataBinding.producer
+                .observeOn(UIScheduler())
+                .on(
                 next : {
                     _ -> Void in
                     self.tableView.reloadData()
+                    self.scrollViewDidScroll(self.tableView!)
+                    //self.process.stopAnimating()
+                    
             }).start()
             
-            self.GetData()
+            self.GetData(stopRefresher)
             initialized = true
         }
 
@@ -105,7 +123,14 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
     public func Refresh()
     {
         self.viewModel.Reset()
-        GetData()
+        GetData(stopRefresher)
+    }
+    
+    func stopRefresher(){
+        dispatch_async(dispatch_get_main_queue(), {
+            self.refreshControl!.endRefreshing()
+            self.refreshControl!.attributedTitle = NSAttributedString(string : "Pull to refresh")
+        });
     }
     
     public override func willMoveToParentViewController(parent: UIViewController?) {
@@ -118,14 +143,10 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         
     }
     
-    func GetData()
+    func GetData(onComplete : CompleteHandler)
     {
         self.viewModel.GetData({
-            dispatch_async(dispatch_get_main_queue()) {
-                self.refreshControl!.endRefreshing()
-                self.process.stopAnimating()
-                //self.scrollViewDidScroll(self.tableView)
-            }
+            onComplete()
         })
     }
     
@@ -143,6 +164,14 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
 }
 
 extension StreamListController {
+    public override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row > loadedIndex {
+            loadedIndex = indexPath.row
+            PopAnimate(cell)
+        }
+        
+    }
+    
     public override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (viewModel.dataBinding.value.count)
     }
@@ -160,7 +189,7 @@ extension StreamListController {
             
         if(indexPath.row + 12 > viewModel.dataBinding.value.count && viewModel.isBusyBinding.value == false){
             process.startAnimating()
-            self.GetData()
+            self.GetData({})
         }
             
         let cell = tableView.dequeueReusableCellWithIdentifier(streamCellIdentifier, forIndexPath: indexPath) as! StreamCell
@@ -185,6 +214,20 @@ extension StreamListController {
         // Navigate to player view
         self.navigationController?.pushViewController(playerViewController, animated: true)
     }
+    
+    // Preheat
+    func preheatWindowChanged(addedIndexPaths added: [NSIndexPath], removedIndexPaths removed: [NSIndexPath]) {
+        var urls : [String] = []
+        
+        for index in added {
+            if let url = viewModel.dataBinding.value[index.row].preview?.medium {
+                urls.append(url)
+            }
+        }
+        
+        SDWebImagePrefetcher.sharedImagePrefetcher().prefetchURLs(urls)
+    }
+    
     
     public override func scrollViewDidScroll(scrollView: UIScrollView) {
         if (scrollView == self.tableView) {
