@@ -15,10 +15,16 @@ import UIKit
 class TwitchGameCollectionCell : UICollectionViewCell{
     var viewModel: TwitchGameCellModeling? {
         didSet {
-            self.gameName.text = viewModel?.game?.game?.name
+            //self.gameName.text = viewModel?.game?.game?.name
+            
             let url = NSURL(string: (self.viewModel?.game?.game?.box?.large)!)
             self.gameThumbnail.sd_setImageWithURLWithFade(url, placeholderImage: UIImage.defaultGameBox)
-            self.gameNameBackgroundView.backgroundColor = AppConstant.TwitchDarkGray050
+            
+            viewModel?.Title.producer.takeUntil(self.racutil_prepareForReuseProducer)
+                .on(next : { title in
+                    self.gameName.text = title
+                })
+                .start()
         }
     }
     
@@ -34,7 +40,7 @@ class TwitchGameCollectionCell : UICollectionViewCell{
     
     
     private var gameThumbnail : UIImageView!
-    private var gameName : UILabel!
+    public var gameName : UILabel!
     private var gameNameBackgroundView : UIView!
     
     private func commonInit() {
@@ -43,6 +49,7 @@ class TwitchGameCollectionCell : UICollectionViewCell{
         gameThumbnail = UIImageView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
         gameNameBackgroundView = UIView(frame: CGRect(x: 0, y: TwitchGameCell.height - 40, width: self.bounds.width, height: 40))
         gameNameBackgroundView.backgroundColor = AppConstant.TwitchDarkGray050
+        
         gameName = UILabel(frame: CGRect(x: 0, y: TwitchGameCell.height - 40, width: self.bounds.width, height: 40))
         gameName.textColor = AppConstant.AppWhite
         gameName.textAlignment = .Center

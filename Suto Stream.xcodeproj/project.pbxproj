@@ -101,6 +101,9 @@
 		7CA6E4BF1CEE087E00F61144 /* serviceLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E4BE1CEE087E00F61144 /* serviceLocate.swift */; };
 		7CAC95D11D0B0C86000E8808 /* SideMenuProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC95D01D0B0C86000E8808 /* SideMenuProfileCell.swift */; };
 		7CB6D54F1D01D5A6002CDA8D /* DefaultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6D54E1D01D5A6002CDA8D /* DefaultImage.swift */; };
+		7CD6A21F1D2BED830080ABE4 /* TwitchUserModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A21E1D2BED820080ABE4 /* TwitchUserModeling.swift */; };
+		7CD6A2211D2BEDBF0080ABE4 /* TwitchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A2201D2BEDBF0080ABE4 /* TwitchUserModel.swift */; };
+		7CD6A2231D2CFCE00080ABE4 /* SutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A2221D2CFCE00080ABE4 /* SutoSearchViewController.swift */; };
 		7CE8BF661D002F6A006E631A /* IntroOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8BF651D002F6A006E631A /* IntroOneViewController.swift */; };
 		7CE8EC1B1CEF3EDC00471A46 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC1A1CEF3EDC00471A46 /* AppDelegateSpec.swift */; };
 		7CE8EC1E1CEF4D5D00471A46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8EC201CEF4D5D00471A46 /* Localizable.strings */; };
@@ -111,7 +114,10 @@
 		7CEAA8AC1D211F2700E442F6 /* Pods_Suto_Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */; };
 		7CF840641D2685950027210C /* CellAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF840631D2685950027210C /* CellAnimationHelper.swift */; };
 		7CF840661D26A1B40027210C /* TwitchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF840651D26A1B40027210C /* TwitchUser.swift */; };
+		7CF840681D2A69DD0027210C /* RACUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF840671D2A69DD0027210C /* RACUtil.swift */; };
 		8C08B5E5383E200869EB9A4E /* Pods_Suto_StreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DF1B27B82FC833DBC9940 /* Pods_Suto_StreamUITests.framework */; };
+		BAB8C0FB32EB4BE7ED370371 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8CE34B55DED08BE9A87F0 /* SearchViewController.swift */; };
+		BAB8C18E9E0A3620356443A0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8C07721000D63DCD6E0A5 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +264,9 @@
 		7CA6E4C51CEE0D3700F61144 /* Pods_Suto_Stream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Suto_Stream.framework; path = "../../../Library/Developer/Xcode/DerivedData/Suto_Stream-bltjhxodwdifkhehuwopobxgubch/Build/Products/Debug-iphonesimulator/Pods_Suto_Stream.framework"; sourceTree = "<group>"; };
 		7CAC95D01D0B0C86000E8808 /* SideMenuProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuProfileCell.swift; sourceTree = "<group>"; };
 		7CB6D54E1D01D5A6002CDA8D /* DefaultImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
+		7CD6A21E1D2BED820080ABE4 /* TwitchUserModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUserModeling.swift; sourceTree = "<group>"; };
+		7CD6A2201D2BEDBF0080ABE4 /* TwitchUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUserModel.swift; sourceTree = "<group>"; };
+		7CD6A2221D2CFCE00080ABE4 /* SutoSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SutoSearchViewController.swift; sourceTree = "<group>"; };
 		7CE8BF651D002F6A006E631A /* IntroOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroOneViewController.swift; sourceTree = "<group>"; };
 		7CE8EC1A1CEF3EDC00471A46 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		7CE8EC1F1CEF4D5D00471A46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -268,8 +277,11 @@
 		7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCellViewModel.swift; sourceTree = "<group>"; };
 		7CF840631D2685950027210C /* CellAnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAnimationHelper.swift; sourceTree = "<group>"; };
 		7CF840651D26A1B40027210C /* TwitchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUser.swift; sourceTree = "<group>"; };
+		7CF840671D2A69DD0027210C /* RACUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACUtil.swift; sourceTree = "<group>"; };
 		7FC9648FEF6883EE596B0AA4 /* Pods_Suto_Stream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_Stream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32AE8165EB1C2907A27712C /* Pods-Suto StreamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamUITests/Pods-Suto StreamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAB8C07721000D63DCD6E0A5 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		BAB8CE34B55DED08BE9A87F0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D34DF1B27B82FC833DBC9940 /* Pods_Suto_StreamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suto_StreamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FC0F1646F2576F8EECFB39 /* Pods-Suto StreamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto StreamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suto StreamTests/Pods-Suto StreamTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE09DF23BF1FE9B592426245 /* Pods-Suto Stream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suto Stream.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suto Stream/Pods-Suto Stream.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +360,7 @@
 				7C728DD11D1171B1003B1599 /* UIViewController.swift */,
 				7C83297F1D266B2000CED836 /* UIImageView.swift */,
 				7CF840631D2685950027210C /* CellAnimationHelper.swift */,
+				7CF840671D2A69DD0027210C /* RACUtil.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -454,6 +467,7 @@
 				7C0406F91CF59A61008D3D77 /* HomeCollectionViewController.swift */,
 				7C0406F21CF46CBF008D3D77 /* StreamListController.swift */,
 				7C7BD8421D005FE200F6701A /* PlayerViewController.swift */,
+				BAB8CE34B55DED08BE9A87F0 /* SearchViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -461,15 +475,17 @@
 		7C45CAE81CEDFFD4009CE382 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7CD6A21D1D2BED740080ABE4 /* Cell */,
 				7C45CAE91CEDFFE2009CE382 /* HomeViewModel.swift */,
 				7CA6E4BC1CEE05CE00F61144 /* HomeViewModeling.swift */,
-				7CE8EC261CEF57CA00471A46 /* TwitchGameCellModeling.swift */,
 				7CE8EC281CEF57D700471A46 /* TwitchGameCellViewModel.swift */,
+				7CE8EC261CEF57CA00471A46 /* TwitchGameCellModeling.swift */,
 				7C7BD83A1D0056A000F6701A /* StreamListViewModel.swift */,
 				7C7BD8491D006B4B00F6701A /* StreamCellViewModel.swift */,
 				7C7BD8441D00648800F6701A /* PlayerViewModel.swift */,
 				7C7BD84B1D006E7200F6701A /* BaseViewModel.swift */,
 				7C728DF71D142DB5003B1599 /* StreamListViewModeling.swift */,
+				BAB8C07721000D63DCD6E0A5 /* SearchViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -481,6 +497,7 @@
 				7C728DD61D11880A003B1599 /* HighLightButton.swift */,
 				7C728DEE1D13FCFE003B1599 /* HidingNavigationBarManagerDelegate.swift */,
 				7C728DF01D13FD27003B1599 /* HidingViewController.swift */,
+				7CD6A2221D2CFCE00080ABE4 /* SutoSearchViewController.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -608,6 +625,15 @@
 				7C7BD8381D0044AD00F6701A /* IntroThreeViewController.swift */,
 			);
 			name = Intro;
+			sourceTree = "<group>";
+		};
+		7CD6A21D1D2BED740080ABE4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6A21E1D2BED820080ABE4 /* TwitchUserModeling.swift */,
+				7CD6A2201D2BEDBF0080ABE4 /* TwitchUserModel.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		C2AB3C49EC4C186FA6445CA8 /* Frameworks */ = {
@@ -966,7 +992,9 @@
 				7C0E1A3B1CFC78D80060DA4F /* JsonInitable.swift in Sources */,
 				7C0E1A481CFC78D80060DA4F /* TwitchTopGameResult.swift in Sources */,
 				7C1BD7D11D072A0C00F9773A /* M3U8Parser.swift in Sources */,
+				7CD6A2231D2CFCE00080ABE4 /* SutoSearchViewController.swift in Sources */,
 				7C1EA5B21CF740A300905A9F /* SutoNavigationController.swift in Sources */,
+				7CD6A2211D2BEDBF0080ABE4 /* TwitchUserModel.swift in Sources */,
 				7C7BD83F1D005A8E00F6701A /* TwitchStream.swift in Sources */,
 				7C0E1A461CFC78D80060DA4F /* TwitchLink.swift in Sources */,
 				7C1EA5AD1CF720B000905A9F /* UIColorHelper.swift in Sources */,
@@ -1004,9 +1032,13 @@
 				7C728DE71D11892C003B1599 /* PaintCodeIcons7.swift in Sources */,
 				7C1EA5B41CF84C4E00905A9F /* SutoViewController.swift in Sources */,
 				7C57EC7F1D08410800AFC2BC /* IM3U8Parser.swift in Sources */,
+				7CF840681D2A69DD0027210C /* RACUtil.swift in Sources */,
 				7C7BD8431D005FE200F6701A /* PlayerViewController.swift in Sources */,
 				7C728DD41D1175DF003B1599 /* SideMenuProfile.swift in Sources */,
 				7C728DD71D11880A003B1599 /* HighLightButton.swift in Sources */,
+				BAB8C0FB32EB4BE7ED370371 /* SearchViewController.swift in Sources */,
+				7CD6A21F1D2BED830080ABE4 /* TwitchUserModeling.swift in Sources */,
+				BAB8C18E9E0A3620356443A0 /* SearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,8 +1201,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -1256,7 +1288,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "owned.Suto-Stream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Suto Stream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1268,8 +1300,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: thang2410199@gmail.com (H626Z7M749)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -1355,7 +1387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "owned.Suto-Stream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e652f8be-8583-4600-90a2-e59d6d2e5d0d";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Suto Stream-Bridging-Header.h";
 			};
 			name = Release;

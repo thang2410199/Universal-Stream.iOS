@@ -68,6 +68,12 @@ func serviceLocate(container : Container) -> Void {
         return viewModel
         }.inObjectScope(.None)
     
+    container.register(SearchViewModel.self) { r in
+        let viewModel = SearchViewModel()
+        return viewModel
+        }.inObjectScope(.None)
+
+    
     container.register(StreamListViewModel.self) { r in
         let viewModel = StreamListViewModel(
             streamService: r.resolve(DataSource<TwitchStreamResult>.self)!

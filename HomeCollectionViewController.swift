@@ -84,6 +84,18 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
             let rightBarButtonItem = UIBarButtonItem(customView: settingsButton)
             self.navigationItem.rightBarButtonItem = rightBarButtonItem
             
+            //Search button
+            let searchButton = HighLightButton(image: UIImage.searchIcon(size: CGSize(width: 25, height: 25), color: AppConstant.AppWhite), alignment: .Right)
+            searchButton.addTarget(self, action: #selector(HomeCollectionViewController.searchButtonTapped), forControlEvents: .TouchUpInside)
+            let leftBarButtonItem = UIBarButtonItem(customView: searchButton)
+            self.navigationItem.rightBarButtonItem = leftBarButtonItem
+            
+            //Menu button
+            let menuButton = HighLightButton(image: UIImage.profileIconAdd(size: CGSize(width: 25, height: 25), color: AppConstant.AppWhite), alignment: .Left)
+            menuButton.addTarget(self, action: #selector(HomeCollectionViewController.menuButtonTapped), forControlEvents: .TouchUpInside)
+            let menuButtonItem = UIBarButtonItem(customView: menuButton)
+            self.navigationItem.leftBarButtonItem = menuButtonItem
+            
             self.navigationItem.title = "Top games"
         }
         
@@ -91,7 +103,7 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         
         if !initilized {
             initilized = true
-            //refreshControl.beginRefreshing()
+            refreshControl.beginRefreshing()
             NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeCollectionViewController.OnAppAction(_:)), name: AppAction.Key, object: nil)
             viewModel?.GetData()
         }
@@ -102,10 +114,12 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         //let detailView = UIViewController()
         //self.navigationController?.pushViewController(detailView, animated: true)
         
+        self.collectionView!.alwaysBounceVertical = true
         refreshControl.addTarget(self, action: #selector(HomeCollectionViewController.refresh), forControlEvents: .ValueChanged)
-        refreshControl.layer.zPosition = -1
+//        refreshControl.layer.zPosition = -1
         hidingNavBarManager!.refreshControl = refreshControl
         self.collectionView!.addSubview(refreshControl)
+        refreshControl.endRefreshing()
         
         // on items source changed, reload Data
         viewModel!.cellModels.producer
@@ -147,8 +161,23 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         self.navigationController?.pushViewController(settingVC, animated: true)
     }
     
+    func searchButtonTapped() {
+        let searchViewController = SearchViewController()
+        searchViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(searchViewController, animated: true)
+
+        //viewModel?.EditTitleAtIndex(i)
+    }
+    
+    func menuButtonTapped() {
+        self.revealViewController().bounceBackOnLeftOverdraw = true
+        self.revealViewController().bounceBackOnOverdraw = true
+        self.revealViewController().revealToggleAnimated(true)
+    }
+    
     func refresh() {
         viewModel?.refresh()
+        loadedIndex = 0
         refreshControl.endRefreshing()
     }
     

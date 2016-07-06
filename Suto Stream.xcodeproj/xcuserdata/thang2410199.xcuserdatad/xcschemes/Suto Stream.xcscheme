@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FADD3139A4E53814A00F2A530906D8E4"
+               BlueprintIdentifier = "6B01B35859B0C0582D08DC901C567240"
                BuildableName = "Pods_Suto_Stream.framework"
                BlueprintName = "Pods-Suto Stream"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

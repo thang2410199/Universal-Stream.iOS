@@ -127,7 +127,7 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
         
 //        let playerVC = MobilePlayerViewController(contentURL: url!)
 //        playerVC.title = "Vanilla Player"
-//        playerVC.activityItems = [url!] // Check the documentation for more information.
+//        playerVC.activityItems = [url!] // Check the documentation for xmore information.
 //        presentMoviePlayerViewControllerAnimated(playerVC)
 
         

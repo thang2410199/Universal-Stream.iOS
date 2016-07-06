@@ -7,8 +7,12 @@
 //
 
 import Foundation
+import ReactiveCocoa
+import enum Result.NoError
 
 public protocol TwitchGameCellModeling {
 
     var game : TwitchTopGame? {get set}
+    var Title : AnyProperty<String> {get}
+    var _Title : MutableProperty<String> {get set}
 }

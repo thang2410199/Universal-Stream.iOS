@@ -74,8 +74,8 @@ public final class HomeViewModel : HomeViewModeling {
                 (response.top, response.top!.map { toCellModel($0) })
             }
             .observeOn(UIScheduler())
-            .on(next: { images, cellModels in
-                self.foundGames += images!
+            .on(next: { games, cellModels in
+                self.foundGames += games!
                 self._cellModels.value += cellModels
                 self._searching.value = false
             })
@@ -103,5 +103,9 @@ public final class HomeViewModel : HomeViewModeling {
     //process event at ViewModel
     public func selectCellAtIndex(index: Int) {
 //        imageDetailViewModel?.update(foundImages, atIndex: index)
+    }
+    
+    public func EditTitleAtIndex(index : Int) {
+        _cellModels.value[index]._Title.value = "haha"
     }
 }

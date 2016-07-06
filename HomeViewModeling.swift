@@ -21,6 +21,8 @@ public protocol HomeViewModeling {
     func selectCellAtIndex(index: Int)
     
     func Authorize(onComplete: CompleteBlock, onError: ErrorBlock, context : AnyObject)
+    
+    func EditTitleAtIndex(index : Int) -> Void
 }
 
 public typealias CompleteHandler = (() -> Void)

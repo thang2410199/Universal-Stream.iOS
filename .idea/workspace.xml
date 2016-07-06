@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ea9ab21-aa58-4b3d-a1b1-2cd506d6557c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RACUtil.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SearchViewController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SearchViewModel.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeCollectionViewController.swift" afterPath="$PROJECT_DIR$/HomeCollectionViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeViewModel.swift" afterPath="$PROJECT_DIR$/HomeViewModel.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeViewModeling.swift" afterPath="$PROJECT_DIR$/HomeViewModeling.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlayerViewController.swift" afterPath="$PROJECT_DIR$/PlayerViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/AMSlideMenu.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/AMSlideMenu.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Alamofire.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Alamofire.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/AlamofireObjectMapper.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/AlamofireObjectMapper.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/BFPaperButton.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/BFPaperButton.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DZNEmptyDataSet.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DZNEmptyDataSet.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DualSlideMenu-DualSlideMenu.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DualSlideMenu-DualSlideMenu.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DualSlideMenu.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/DualSlideMenu.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/FlowSlideMenu.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/FlowSlideMenu.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Kingfisher.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Kingfisher.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/LoremIpsum.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/LoremIpsum.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MMDrawerController.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MMDrawerController.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MSDynamicsDrawerViewController.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MSDynamicsDrawerViewController.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MobilePlayer-MobilePlayer.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MobilePlayer-MobilePlayer.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MobilePlayer.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/MobilePlayer.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Nimble.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Nimble.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/ObjectMapper.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/ObjectMapper.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto Stream.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto Stream.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto StreamTests.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto StreamTests.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto StreamUITests.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Pods-Suto StreamUITests.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/PureLayout.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/PureLayout.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Quick.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Quick.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/ReactiveCocoa.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/ReactiveCocoa.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Realm.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Realm.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RealmSwift.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RealmSwift.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Result.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Result.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxBlocking.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxBlocking.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxCocoa.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxCocoa.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxSwift.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/RxSwift.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SDWebImage.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SDWebImage.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SVProgressHUD.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SVProgressHUD.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Spring.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Spring.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SugarRecord.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SugarRecord.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SwiftyJSON.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/SwiftyJSON.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Swinject.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Swinject.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/UIColor+BFPaperColors.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/UIColor+BFPaperColors.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AMSlideMenu/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AMSlideMenu/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireObjectMapper/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireObjectMapper/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AsyncSwift/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AsyncSwift/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/BFPaperButton/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/BFPaperButton/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DZNEmptyDataSet/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DZNEmptyDataSet/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DropDown/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DropDown/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DualSlideMenu/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DualSlideMenu/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DualSlideMenu/ResourceBundle-DualSlideMenu-Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DualSlideMenu/ResourceBundle-DualSlideMenu-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/FlowSlideMenu/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/FlowSlideMenu/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Kingfisher/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Kingfisher/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/LoremIpsum/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/LoremIpsum/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMDrawerController/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MMDrawerController/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MSDynamicsDrawerViewController/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MSDynamicsDrawerViewController/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MobilePlayer/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MobilePlayer/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MobilePlayer/ResourceBundle-MobilePlayer-Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MobilePlayer/ResourceBundle-MobilePlayer-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/OAuthSwift/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/OAuthSwift/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ObjectMapper/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/ObjectMapper/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Preheat/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Preheat/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PureLayout/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/PureLayout/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Quick/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Quick/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveCocoa/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveCocoa/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Result/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Result/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxBlocking/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RxBlocking/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxTests/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RxTests/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SRKControls/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SRKControls/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SRKControls/ResourceBundle-SRKControls-Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SRKControls/ResourceBundle-SRKControls-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SVProgressHUD/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SVProgressHUD/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Spring/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Spring/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/StatefulViewController/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/StatefulViewController/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SugarRecord/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SugarRecord/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SwiftKeychain/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SwiftKeychain/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SwiftyJSON/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SwiftyJSON/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Swinject/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Swinject/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/UIColor+BFPaperColors/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/UIColor+BFPaperColors/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/iOS-Slide-Menu/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/iOS-Slide-Menu/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/p2.OAuth2/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/p2.OAuth2/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/pop/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/pop/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Suto Stream.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Suto Stream.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Suto Stream.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Suto Stream.xcscheme" afterPath="$PROJECT_DIR$/Suto Stream.xcodeproj/xcuserdata/thang2410199.xcuserdatad/xcschemes/Suto Stream.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Suto Stream.xcworkspace/xcuserdata/thang2410199.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/Suto Stream.xcworkspace/xcuserdata/thang2410199.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitchGameCell.swift" afterPath="$PROJECT_DIR$/TwitchGameCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitchGameCellModeling.swift" afterPath="$PROJECT_DIR$/TwitchGameCellModeling.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitchGameCellViewModel.swift" afterPath="$PROJECT_DIR$/TwitchGameCellViewModel.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitchGameCollectionCell.swift" afterPath="$PROJECT_DIR$/TwitchGameCollectionCell.swift" />
+    </list>
+    <ignored path="Suto Stream.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_af80f9516aa1dcbbfb99aad57b635becab00ff39" />
+  <component name="FavoritesManager">
+    <favorites_list name="Suto Stream" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Deal.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiClientTemp/Deal.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DealSection.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiClientTemp/DealSection.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeCollectionViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HomeCollectionViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="707">
+              <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SearchViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+              <folding>
+                <element signature="e#106#123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UITableView.h" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2737">
+              <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchViewModel.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SearchViewModel.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamCellViewModel.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StreamCellViewModel.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamListController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StreamListController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitchGameCollectionCell.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwitchGameCollectionCell.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project Settings" pinned="false" current-in-tab="false">
+        <entry file="appcode.project-settings://ca4ac59f">
+          <provider selected="true" editor-type-id="AppCode.ProjectSettings">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TwitchGameCollectionCell.swift" />
+        <option value="$PROJECT_DIR$/StreamListController.swift" />
+        <option value="$PROJECT_DIR$/HomeCollectionViewController.swift" />
+        <option value="$PROJECT_DIR$/SearchViewController.swift" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="287" />
+    <option name="y" value="51" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Suto Stream" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViewModel" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Suto Stream" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Suto Stream" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Cidr.FilesView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Suto Stream" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Suto Stream">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="Suto Stream" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Suto Stream" RUN_TARGET_NAME="Suto Stream" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="Suto Stream" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="Suto StreamTests" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApiClient" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="ApiClient" CONFIG_NAME="Debug" SCHEME_NAME="ApiClient" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Suto Stream" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Suto Stream" CONFIG_NAME="Debug" SCHEME_NAME="Suto Stream" RUN_TARGET_PROJECT_NAME="Suto Stream" RUN_TARGET_NAME="Suto Stream" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SutoStream.ApiClient" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="SutoStream.ApiClient" CONFIG_NAME="Debug" SCHEME_NAME="SutoStream.ApiClient" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="testingTarget" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Suto Stream" TARGET_NAME="testingTarget" CONFIG_NAME="Debug" SCHEME_NAME="testingTarget" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Alamofire" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Alamofire" CONFIG_NAME="Debug" SCHEME_NAME="Alamofire" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AlamofireObjectMapper" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AlamofireObjectMapper" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireObjectMapper" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AMSlideMenu" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AMSlideMenu" CONFIG_NAME="Debug" SCHEME_NAME="AMSlideMenu" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AsyncSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AsyncSwift" CONFIG_NAME="Debug" SCHEME_NAME="AsyncSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BFPaperButton" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="BFPaperButton" CONFIG_NAME="Debug" SCHEME_NAME="BFPaperButton" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DropDown" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="DropDown" CONFIG_NAME="Debug" SCHEME_NAME="DropDown" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DualSlideMenu-DualSlideMenu" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="DualSlideMenu-DualSlideMenu" CONFIG_NAME="Debug" SCHEME_NAME="DualSlideMenu-DualSlideMenu" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DualSlideMenu" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="DualSlideMenu" CONFIG_NAME="Debug" SCHEME_NAME="DualSlideMenu" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DZNEmptyDataSet" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="DZNEmptyDataSet" CONFIG_NAME="Debug" SCHEME_NAME="DZNEmptyDataSet" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FlowSlideMenu" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="FlowSlideMenu" CONFIG_NAME="Debug" SCHEME_NAME="FlowSlideMenu" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="iOS-Slide-Menu" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="iOS-Slide-Menu" CONFIG_NAME="Debug" SCHEME_NAME="iOS-Slide-Menu" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Kingfisher" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Kingfisher" CONFIG_NAME="Debug" SCHEME_NAME="Kingfisher" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoremIpsum" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="LoremIpsum" CONFIG_NAME="Debug" SCHEME_NAME="LoremIpsum" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MMDrawerController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MMDrawerController" CONFIG_NAME="Debug" SCHEME_NAME="MMDrawerController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MobilePlayer-MobilePlayer" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MobilePlayer-MobilePlayer" CONFIG_NAME="Debug" SCHEME_NAME="MobilePlayer-MobilePlayer" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MobilePlayer" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MobilePlayer" CONFIG_NAME="Debug" SCHEME_NAME="MobilePlayer" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MSDynamicsDrawerViewController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MSDynamicsDrawerViewController" CONFIG_NAME="Debug" SCHEME_NAME="MSDynamicsDrawerViewController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nimble" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Nimble" CONFIG_NAME="Debug" SCHEME_NAME="Nimble" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OAuthSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="OAuthSwift" CONFIG_NAME="Debug" SCHEME_NAME="OAuthSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObjectMapper" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="ObjectMapper" CONFIG_NAME="Debug" SCHEME_NAME="ObjectMapper" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="p2.OAuth2" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="p2.OAuth2" CONFIG_NAME="Debug" SCHEME_NAME="p2.OAuth2" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-Suto Stream" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Suto Stream" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Suto Stream" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-Suto StreamTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Suto StreamTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Suto StreamTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-Suto StreamUITests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Suto StreamUITests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Suto StreamUITests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pop" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="pop" CONFIG_NAME="Debug" SCHEME_NAME="pop" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Preheat" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Preheat" CONFIG_NAME="Debug" SCHEME_NAME="Preheat" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PureLayout" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="PureLayout" CONFIG_NAME="Debug" SCHEME_NAME="PureLayout" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Quick" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Quick" CONFIG_NAME="Debug" SCHEME_NAME="Quick" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReactiveCocoa" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="ReactiveCocoa" CONFIG_NAME="Debug" SCHEME_NAME="ReactiveCocoa" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Realm" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Realm" CONFIG_NAME="Debug" SCHEME_NAME="Realm" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RealmSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RealmSwift" CONFIG_NAME="Debug" SCHEME_NAME="RealmSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Result" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Result" CONFIG_NAME="Debug" SCHEME_NAME="Result" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RxBlocking" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RxBlocking" CONFIG_NAME="Debug" SCHEME_NAME="RxBlocking" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RxCocoa" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RxCocoa" CONFIG_NAME="Debug" SCHEME_NAME="RxCocoa" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RxSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RxSwift" CONFIG_NAME="Debug" SCHEME_NAME="RxSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RxTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RxTests" CONFIG_NAME="Debug" SCHEME_NAME="RxTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SDWebImage" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SDWebImage" CONFIG_NAME="Debug" SCHEME_NAME="SDWebImage" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Spring" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Spring" CONFIG_NAME="Debug" SCHEME_NAME="Spring" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SRKControls-SRKControls" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SRKControls-SRKControls" CONFIG_NAME="Debug" SCHEME_NAME="SRKControls-SRKControls" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SRKControls" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SRKControls" CONFIG_NAME="Debug" SCHEME_NAME="SRKControls" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StatefulViewController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="StatefulViewController" CONFIG_NAME="Debug" SCHEME_NAME="StatefulViewController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SugarRecord" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SugarRecord" CONFIG_NAME="Debug" SCHEME_NAME="SugarRecord" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SVProgressHUD" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SVProgressHUD" CONFIG_NAME="Debug" SCHEME_NAME="SVProgressHUD" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SwiftKeychain" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SwiftKeychain" CONFIG_NAME="Debug" SCHEME_NAME="SwiftKeychain" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SwiftyJSON" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SwiftyJSON" CONFIG_NAME="Debug" SCHEME_NAME="SwiftyJSON" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Swinject" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Swinject" CONFIG_NAME="Debug" SCHEME_NAME="Swinject" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="UIColor+BFPaperColors" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="UIColor+BFPaperColors" CONFIG_NAME="Debug" SCHEME_NAME="UIColor+BFPaperColors" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <list size="51">
+      <item index="0" class="java.lang.String" itemvalue="Application.ApiClient" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Suto Stream" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SutoStream.ApiClient" />
+      <item index="3" class="java.lang.String" itemvalue="Application.testingTarget" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Alamofire" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AlamofireObjectMapper" />
+      <item index="6" class="java.lang.String" itemvalue="Application.AMSlideMenu" />
+      <item index="7" class="java.lang.String" itemvalue="Application.AsyncSwift" />
+      <item index="8" class="java.lang.String" itemvalue="Application.BFPaperButton" />
+      <item index="9" class="java.lang.String" itemvalue="Application.DropDown" />
+      <item index="10" class="java.lang.String" itemvalue="Application.DualSlideMenu-DualSlideMenu" />
+      <item index="11" class="java.lang.String" itemvalue="Application.DualSlideMenu" />
+      <item index="12" class="java.lang.String" itemvalue="Application.DZNEmptyDataSet" />
+      <item index="13" class="java.lang.String" itemvalue="Application.FlowSlideMenu" />
+      <item index="14" class="java.lang.String" itemvalue="Application.iOS-Slide-Menu" />
+      <item index="15" class="java.lang.String" itemvalue="Application.Kingfisher" />
+      <item index="16" class="java.lang.String" itemvalue="Application.LoremIpsum" />
+      <item index="17" class="java.lang.String" itemvalue="Application.MMDrawerController" />
+      <item index="18" class="java.lang.String" itemvalue="Application.MobilePlayer-MobilePlayer" />
+      <item index="19" class="java.lang.String" itemvalue="Application.MobilePlayer" />
+      <item index="20" class="java.lang.String" itemvalue="Application.MSDynamicsDrawerViewController" />
+      <item index="21" class="java.lang.String" itemvalue="Application.Nimble" />
+      <item index="22" class="java.lang.String" itemvalue="Application.OAuthSwift" />
+      <item index="23" class="java.lang.String" itemvalue="Application.ObjectMapper" />
+      <item index="24" class="java.lang.String" itemvalue="Application.p2.OAuth2" />
+      <item index="25" class="java.lang.String" itemvalue="Application.Pods-Suto Stream" />
+      <item index="26" class="java.lang.String" itemvalue="Application.Pods-Suto StreamTests" />
+      <item index="27" class="java.lang.String" itemvalue="Application.Pods-Suto StreamUITests" />
+      <item index="28" class="java.lang.String" itemvalue="Application.pop" />
+      <item index="29" class="java.lang.String" itemvalue="Application.Preheat" />
+      <item index="30" class="java.lang.String" itemvalue="Application.PureLayout" />
+      <item index="31" class="java.lang.String" itemvalue="Application.Quick" />
+      <item index="32" class="java.lang.String" itemvalue="Application.ReactiveCocoa" />
+      <item index="33" class="java.lang.String" itemvalue="Application.Realm" />
+      <item index="34" class="java.lang.String" itemvalue="Application.RealmSwift" />
+      <item index="35" class="java.lang.String" itemvalue="Application.Result" />
+      <item index="36" class="java.lang.String" itemvalue="Application.RxBlocking" />
+      <item index="37" class="java.lang.String" itemvalue="Application.RxCocoa" />
+      <item index="38" class="java.lang.String" itemvalue="Application.RxSwift" />
+      <item index="39" class="java.lang.String" itemvalue="Application.RxTests" />
+      <item index="40" class="java.lang.String" itemvalue="Application.SDWebImage" />
+      <item index="41" class="java.lang.String" itemvalue="Application.Spring" />
+      <item index="42" class="java.lang.String" itemvalue="Application.SRKControls-SRKControls" />
+      <item index="43" class="java.lang.String" itemvalue="Application.SRKControls" />
+      <item index="44" class="java.lang.String" itemvalue="Application.StatefulViewController" />
+      <item index="45" class="java.lang.String" itemvalue="Application.SugarRecord" />
+      <item index="46" class="java.lang.String" itemvalue="Application.SVProgressHUD" />
+      <item index="47" class="java.lang.String" itemvalue="Application.SwiftKeychain" />
+      <item index="48" class="java.lang.String" itemvalue="Application.SwiftyJSON" />
+      <item index="49" class="java.lang.String" itemvalue="Application.Swinject" />
+      <item index="50" class="java.lang.String" itemvalue="Application.UIColor+BFPaperColors" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="287" y="51" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="387" y="151" width="1200" height="800" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2533137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ApiClientTemp/Deal.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiClientTemp/SwiftyConverter.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiClientTemp/JsonInitable.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiClientTemp/DealSection.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="appcode.project-settings://ca4ac59f">
+      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitchGameCollectionCell.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HomeCollectionViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StreamCellViewModel.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StreamListController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SearchViewModel.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2737">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SearchViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="e#106#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
