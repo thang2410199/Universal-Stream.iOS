@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SideMenu
 
 extension SWRevealViewController {
     override public func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
@@ -50,7 +51,7 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
         let homeController = HomeCollectionViewController()
         homeController.viewModel = AppDelegate.CurrentApp.container.resolve(HomeViewModeling.self)
         
-        let topStreamController = StreamListController()
+        let topStreamController = TopStreamListController()
         
         let navigationController1 = SutoNavigationController(rootViewController: homeController)
         let navigationController2 = SutoNavigationController(rootViewController: topStreamController)
@@ -59,8 +60,60 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
         
         self.setUpTabbarItems()
         
+        // Define the menus
+        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: SideMenuViewController())
+        menuLeftNavigationController.leftSide = true
+        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+        
+        //let menuRightNavigationController = UISideMenuNavigationController()
+        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+        //SideMenuManager.menuRightNavigationController = menuRightNavigationController
+        SideMenuManager.menuWidth = 300
+        
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        //SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        var gestureRecognizer = SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+        gestureRecognizer[0].addTarget(self, action:#selector(SutoTabBarController.handlePresentMenuPan(_:)))
+        SideMenuManager.menuFadeStatusBar = false
+        SideMenuManager.menuParallaxStrength = 2
+        SideMenuManager.menuPresentMode = .ViewSlideOut
+//        SideMenuManager.menuAnimationFadeStrength = 1
+//        SideMenuManager.menuShadowRadius = 0
+//        SideMenuManager.menuShadowOpacity = 0
+//        SideMenuManager.menuShadowColor = UIColor.clearColor()
+        
         // Listen tokens refresh token outdated in here
         // NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.dynamicType.handleExpiredRefreshTokenNotification(_:)), name: WebServicesRefreshTokenExpiredNotificationKey, object: nil)
+        
+    }
+    
+    func handlePresentMenuPan(sender : UIPanGestureRecognizer) -> Void {
+        
+        guard let menuView = SideMenuManager.menuLeftNavigationController != nil ? SideMenuManager.menuLeftNavigationController?.view : sender.view else {
+            return
+        }
+        
+        //let transform = menuView.transform
+        //menuView.transform = CGAffineTransformIdentity
+        let translation = sender.translationInView(sender.view!)
+        let distance = translation.x / SideMenuManager.menuWidth
+        //menuView.transform = transform
+        
+        
+        if sender.state == UIGestureRecognizerState.Began{
+            
+        }else{
+            if sender.state == UIGestureRecognizerState.Changed{
+                
+                
+            } else {
+                if sender.state == UIGestureRecognizerState.Ended{
+                    
+                }
+            }
+        }
         
     }
     

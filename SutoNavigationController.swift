@@ -39,10 +39,18 @@ class SutoNavigationController : UINavigationController {
 
 extension SutoNavigationController {
     override func shouldAutorotate() -> Bool {
-        return visibleViewController!.shouldAutorotate()
+        if let visibleViewController = self.visibleViewController {            
+            return visibleViewController.shouldAutorotate()
+        }
+       
+        return false
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return (visibleViewController?.supportedInterfaceOrientations())!
+        if let visibleViewController = self.visibleViewController {
+            return visibleViewController.supportedInterfaceOrientations()
+        }
+
+        return .Portrait
     }
 }

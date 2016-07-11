@@ -104,6 +104,7 @@
 		7CD6A21F1D2BED830080ABE4 /* TwitchUserModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A21E1D2BED820080ABE4 /* TwitchUserModeling.swift */; };
 		7CD6A2211D2BEDBF0080ABE4 /* TwitchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A2201D2BEDBF0080ABE4 /* TwitchUserModel.swift */; };
 		7CD6A2231D2CFCE00080ABE4 /* SutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A2221D2CFCE00080ABE4 /* SutoSearchViewController.swift */; };
+		7CD6A2251D2FD9F20080ABE4 /* TopStreamListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6A2241D2FD9F20080ABE4 /* TopStreamListController.swift */; };
 		7CE8BF661D002F6A006E631A /* IntroOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8BF651D002F6A006E631A /* IntroOneViewController.swift */; };
 		7CE8EC1B1CEF3EDC00471A46 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EC1A1CEF3EDC00471A46 /* AppDelegateSpec.swift */; };
 		7CE8EC1E1CEF4D5D00471A46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8EC201CEF4D5D00471A46 /* Localizable.strings */; };
@@ -267,6 +268,7 @@
 		7CD6A21E1D2BED820080ABE4 /* TwitchUserModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUserModeling.swift; sourceTree = "<group>"; };
 		7CD6A2201D2BEDBF0080ABE4 /* TwitchUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchUserModel.swift; sourceTree = "<group>"; };
 		7CD6A2221D2CFCE00080ABE4 /* SutoSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SutoSearchViewController.swift; sourceTree = "<group>"; };
+		7CD6A2241D2FD9F20080ABE4 /* TopStreamListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreamListController.swift; sourceTree = "<group>"; };
 		7CE8BF651D002F6A006E631A /* IntroOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroOneViewController.swift; sourceTree = "<group>"; };
 		7CE8EC1A1CEF3EDC00471A46 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		7CE8EC1F1CEF4D5D00471A46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 				7C4BAF151CEF010400548A75 /* HomeViewController.swift */,
 				7C0406F91CF59A61008D3D77 /* HomeCollectionViewController.swift */,
 				7C0406F21CF46CBF008D3D77 /* StreamListController.swift */,
+				7CD6A2241D2FD9F20080ABE4 /* TopStreamListController.swift */,
 				7C7BD8421D005FE200F6701A /* PlayerViewController.swift */,
 				BAB8CE34B55DED08BE9A87F0 /* SearchViewController.swift */,
 			);
@@ -1001,6 +1004,7 @@
 				7C7BD8391D0044AD00F6701A /* IntroThreeViewController.swift in Sources */,
 				7C728DFE1D14406C003B1599 /* NotificationCell.swift in Sources */,
 				7CE8EC271CEF57CA00471A46 /* TwitchGameCellModeling.swift in Sources */,
+				7CD6A2251D2FD9F20080ABE4 /* TopStreamListController.swift in Sources */,
 				7C7BD85C1D01AECF00F6701A /* String.swift in Sources */,
 				7C728DFC1D14401F003B1599 /* VideoQualityCell.swift in Sources */,
 				7C7BD8371D0044A100F6701A /* IntroTwoViewController.swift in Sources */,
@@ -1282,8 +1286,6 @@
 					"-framework",
 					"\"UIColor_BFPaperColors\"",
 					"-framework",
-					"\"iOS_Slide_Menu\"",
-					"-framework",
 					"\"p2_OAuth2\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "owned.Suto-Stream";
@@ -1380,8 +1382,6 @@
 					"\"Swinject\"",
 					"-framework",
 					"\"UIColor_BFPaperColors\"",
-					"-framework",
-					"\"iOS_Slide_Menu\"",
 					"-framework",
 					"\"p2_OAuth2\"",
 				);

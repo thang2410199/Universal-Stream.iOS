@@ -28,7 +28,7 @@ target 'Suto Stream' do
     pod 'AMSlideMenu', '~> 1.5.4'
     pod 'DualSlideMenu'
     pod 'MSDynamicsDrawerViewController'
-    pod 'iOS-Slide-Menu'
+    pod 'SideMenu', '~> 1.1'
     pod 'MMDrawerController', '~> 0.5.7'
     pod 'BFPaperButton'
     pod 'SRKControls', '~> 3.0.1'

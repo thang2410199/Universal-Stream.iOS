@@ -14,7 +14,7 @@ import ReactiveCocoa
 import Spring
 import pop
 
-public class StreamListController : UITableViewController, UIGestureRecognizerDelegate {
+public class StreamListController : UITableViewController {
     var initialized = false
     
     var viewModel : StreamListViewModel
@@ -82,7 +82,6 @@ public class StreamListController : UITableViewController, UIGestureRecognizerDe
         
         if(!initialized)
         {
-            self.navigationController?.interactivePopGestureRecognizer?.delegate = self
             self.viewModel.streamService.SetParameter("stream_type", value: "live")
             if let game = topGame {
                 //self.navigationController?.navigationBar.topItem?.title = game.game?.name

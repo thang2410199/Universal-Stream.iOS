@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import SideMenu
 
 public final class HomeCollectionViewController : UICollectionViewController, TabbarItemDelegate {
     var initilized : Bool = false
@@ -23,7 +24,6 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         didSet {
         }
     }
-    
     
     public var viewModel: HomeViewModeling?
     
@@ -48,7 +48,6 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
     
     override public func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
         hidingNavBarManager?.viewWillDisappear(animated)
     }
     
@@ -102,13 +101,14 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
         self.collectionView?.backgroundColor = AppConstant.AppWhite
         
         if !initilized {
+            
             initilized = true
             refreshControl.beginRefreshing()
             NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeCollectionViewController.OnAppAction(_:)), name: AppAction.Key, object: nil)
             viewModel?.GetData()
         }
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         //self.tableView.separatorColor = UIColor.clearColor()
         //let detailView = UIViewController()
@@ -170,9 +170,7 @@ public final class HomeCollectionViewController : UICollectionViewController, Ta
     }
     
     func menuButtonTapped() {
-        self.revealViewController().bounceBackOnLeftOverdraw = true
-        self.revealViewController().bounceBackOnOverdraw = true
-        self.revealViewController().revealToggleAnimated(true)
+        presentViewController(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     
     func refresh() {

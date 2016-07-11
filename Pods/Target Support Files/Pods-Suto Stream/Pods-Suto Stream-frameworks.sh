@@ -112,6 +112,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SRKControls/SRKControls.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
   install_framework "$BUILT_PRODUCTS_DIR/StatefulViewController/StatefulViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SugarRecord/SugarRecord.framework"
@@ -119,7 +120,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swinject/Swinject.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIColor+BFPaperColors/UIColor_BFPaperColors.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/iOS-Slide-Menu/iOS_Slide_Menu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/p2.OAuth2/p2_OAuth2.framework"
   install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
@@ -152,6 +152,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SRKControls/SRKControls.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
   install_framework "$BUILT_PRODUCTS_DIR/StatefulViewController/StatefulViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SugarRecord/SugarRecord.framework"
@@ -159,7 +160,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swinject/Swinject.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIColor+BFPaperColors/UIColor_BFPaperColors.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/iOS-Slide-Menu/iOS_Slide_Menu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/p2.OAuth2/p2_OAuth2.framework"
   install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi

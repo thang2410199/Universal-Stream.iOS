@@ -11,7 +11,6 @@ PODS:
   - DualSlideMenu (1.7.3)
   - DZNEmptyDataSet (1.8.1)
   - FlowSlideMenu (0.1.8)
-  - iOS-Slide-Menu (1.5)
   - Kingfisher (2.4.1)
   - LoremIpsum (1.0.0)
   - MMDrawerController (0.5.7):
@@ -64,6 +63,7 @@ PODS:
   - SDWebImage (3.8.0):
     - SDWebImage/Core (= 3.8.0)
   - SDWebImage/Core (3.8.0)
+  - SideMenu (1.1.7)
   - Spring (1.0.3)
   - SRKControls (3.0.5):
     - SRKControls/Controls (= 3.0.5)
@@ -128,7 +128,6 @@ DEPENDENCIES:
   - DualSlideMenu
   - DZNEmptyDataSet
   - FlowSlideMenu
-  - iOS-Slide-Menu
   - Kingfisher (~> 2.4)
   - LoremIpsum (~> 1.0)
   - MMDrawerController (~> 0.5.7)
@@ -148,6 +147,7 @@ DEPENDENCIES:
   - RxSwift (~> 2.0)
   - RxTests
   - SDWebImage (~> 3.7)
+  - SideMenu (~> 1.1)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
   - SRKControls (~> 3.0.1)
   - StatefulViewController (~> 1.0)
@@ -181,7 +181,6 @@ SPEC CHECKSUMS:
   DualSlideMenu: 8e1c5255a95c3dcfc1c6dc470105278765f52093
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FlowSlideMenu: 1994bcbe22c12c61fcb52e78a3da5189cef2c4d6
-  iOS-Slide-Menu: 40b0cbd8916c42afc755f0869793cd09e7a32102
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
@@ -204,6 +203,7 @@ SPEC CHECKSUMS:
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
   RxTests: 1b13bea0a138552b52aeead549ef08d578bcda9e
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
+  SideMenu: 7b420772e1aa7a2b3a0b0e191566e7e8e0868f53
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SRKControls: ef82f31f3bdea31ab8ec5d36057f553c8b8815a5
   StatefulViewController: 396f6d25676680a5c0503143cca55be23ab8c362
@@ -214,6 +214,6 @@ SPEC CHECKSUMS:
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
   UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
-PODFILE CHECKSUM: 5c112549db09efb6c8ef548bf18dcc03147cb8bb
+PODFILE CHECKSUM: d0ed7f7a701fb2495cc7933b67c9dc0f0e66ac33
 
 COCOAPODS: 1.0.0

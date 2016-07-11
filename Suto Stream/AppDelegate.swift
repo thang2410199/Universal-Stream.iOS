@@ -86,6 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         else
         {
+            return SutoTabBarController()
             let controller : SWRevealViewController? = getInstance()
             
 //            let controller = MSDynamicsDrawerViewController()

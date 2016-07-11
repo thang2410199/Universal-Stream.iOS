@@ -86,6 +86,10 @@ func serviceLocate(container : Container) -> Void {
         return viewModel
         }.inObjectScope(.None)
     
+    container.register(SettingViewController.self) { r in
+        return SettingViewController()
+    }.inObjectScope(ObjectScope.None)
+    
 //    container.register(ImageDetailViewModelModifiable.self) { _ in
 //        ImageDetailViewModel(
 //            network: container.resolve(Networking.self)!,
@@ -102,6 +106,7 @@ func serviceLocate(container : Container) -> Void {
         viewController.rearViewRevealWidth = 300
         return viewController
     }
+
     
 //    container.registerForStoryboard(HomeViewController.self) { r, c in
 //        c.viewModel = r.resolve(HomeViewModeling.self)!

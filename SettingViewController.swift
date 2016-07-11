@@ -11,7 +11,7 @@ import PureLayout
 import UIKit
 import SRKControls
 
-class SettingViewController : UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UITextFieldDelegate, SRKComboBoxDelegate
+class SettingViewController : UIViewController, UINavigationBarDelegate, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UITextFieldDelegate, SRKComboBoxDelegate
 {
     
     var tableView : UITableView!
@@ -35,8 +35,6 @@ class SettingViewController : UIViewController, UITableViewDelegate, UITableView
             //Done button
             let doneButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: #selector(SettingViewController.DoneDidPressed))
             self.navigationItem.rightBarButtonItem = doneButton
-            
-            self.navigationItem.title = "Top games"
         }
         
         
@@ -93,6 +91,7 @@ class SettingViewController : UIViewController, UITableViewDelegate, UITableView
         AppDelegate.SutoAppSetting.SaveSetting()
         // Navigate back
         self.navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
