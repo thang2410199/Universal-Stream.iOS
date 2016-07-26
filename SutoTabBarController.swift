@@ -34,6 +34,7 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
     private var _oldSelectedIndex = 0
     let homeController : HomeCollectionViewController? = nil
     let topStreamController : StreamListController? = nil
+    var _bar : UIView!
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -48,41 +49,48 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
     func commonInit() {
         self.delegate = self
         
-        let homeController = HomeCollectionViewController()
-        homeController.viewModel = AppDelegate.CurrentApp.container.resolve(HomeViewModeling.self)
+        
+        let homeViewModel = AppDelegate.CurrentApp.container.resolve(HomeViewModeling.self)
+        let homeController = HomeCollectionViewController(viewModel: homeViewModel)
         
         let topStreamController = TopStreamListController()
+        
+        let searchViewController = SearchViewController()
+        let profileViewController = ProfileViewController()
         
         let navigationController1 = SutoNavigationController(rootViewController: homeController)
         let navigationController2 = SutoNavigationController(rootViewController: topStreamController)
         
-        self.viewControllers = [navigationController1, navigationController2]
+        let navigationController3 = SutoNavigationController(rootViewController: searchViewController)
+        let navigationController4 = SutoNavigationController(rootViewController: profileViewController)
+        
+        self.viewControllers = [navigationController1, navigationController2, navigationController3, navigationController4]
         
         self.setUpTabbarItems()
         
-        // Define the menus
-        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: SideMenuViewController())
-        menuLeftNavigationController.leftSide = true
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
-        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
-        
-        //let menuRightNavigationController = UISideMenuNavigationController()
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
-        //SideMenuManager.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.menuWidth = 300
-        
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
-        //SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        var gestureRecognizer = SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
-        gestureRecognizer[0].addTarget(self, action:#selector(SutoTabBarController.handlePresentMenuPan(_:)))
-        SideMenuManager.menuFadeStatusBar = false
-        SideMenuManager.menuParallaxStrength = 2
-        SideMenuManager.menuPresentMode = .ViewSlideOut
-//        SideMenuManager.menuAnimationFadeStrength = 1
-//        SideMenuManager.menuShadowRadius = 0
-//        SideMenuManager.menuShadowOpacity = 0
-//        SideMenuManager.menuShadowColor = UIColor.clearColor()
+//        // Define the menus
+//        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: SideMenuViewController())
+//        menuLeftNavigationController.leftSide = true
+//        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+//        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+//        
+//        //let menuRightNavigationController = UISideMenuNavigationController()
+//        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+//        //SideMenuManager.menuRightNavigationController = menuRightNavigationController
+//        SideMenuManager.menuWidth = 300
+//        
+//        // Enable gestures. The left and/or right menus must be set up above for these to work.
+//        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+//        //SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        var gestureRecognizer = SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+//        gestureRecognizer[0].addTarget(self, action:#selector(SutoTabBarController.handlePresentMenuPan(_:)))
+//        SideMenuManager.menuFadeStatusBar = false
+//        SideMenuManager.menuParallaxStrength = 2
+//        SideMenuManager.menuPresentMode = .ViewSlideOut
+        //        SideMenuManager.menuAnimationFadeStrength = 1
+        //        SideMenuManager.menuShadowRadius = 0
+        //        SideMenuManager.menuShadowOpacity = 0
+        //        SideMenuManager.menuShadowColor = UIColor.clearColor()
         
         // Listen tokens refresh token outdated in here
         // NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.dynamicType.handleExpiredRefreshTokenNotification(_:)), name: WebServicesRefreshTokenExpiredNotificationKey, object: nil)
@@ -123,42 +131,65 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
         }
         
         //Add bar into tab bar
+        _bar = UIView(frame: CGRect(x: 0, y: self.tabBar.frame.size.height - 49, width: self.tabBar.frame.width/CGFloat(items.count), height: 49))
+        _bar.backgroundColor = AppConstant.AppColor
+        _bar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth]
+        _bar.userInteractionEnabled = false
+        self.tabBar.addSubview(_bar)
         
-        let tabbarItemInset : CGFloat = -6
         
-//        let discoveryIcon = UIImage.tabbarDiscoveryIcon(size: CGSize(width: 25, height: 25), color: normalColor)
-//        let discoveryIconSelected = UIImage.tabbarDiscoveryIcon(size: CGSize(width: 25, height: 25), color: selectedColor)
-//        
-//        let conversationIcon = UIImage.tabbarConversationIcon(size: CGSize(width: 25, height: 25), color: normalColor)
-//        let conversationIconSelected = UIImage.tabbarConversationIcon(size: CGSize(width: 25, height: 25), color: selectedColor)
+        let tabbarItemInset : CGFloat = 5
+        
+        //        let discoveryIcon = UIImage.tabbarDiscoveryIcon(size: CGSize(width: 25, height: 25), color: normalColor)
+        //        let discoveryIconSelected = UIImage.tabbarDiscoveryIcon(size: CGSize(width: 25, height: 25), color: selectedColor)
+        //
+        
+        
+        let gameIcon = UIImage.gameIcon(size: CGSize(width: 21, height: 20), color: AppConstant.AppColor)
+        let gameIconSelected = UIImage.gameIcon(size: CGSize(width: 21, height: 20), color: AppConstant.AppWhite)
+        
+        let streamIcon = UIImage.streamIcon(size: CGSize(width: 30, height: 20), color: AppConstant.AppColor)
+        let streamIconSelected = UIImage.streamIcon(size: CGSize(width: 30, height: 20), color: AppConstant.AppWhite)
+        
+        let searchIcon = UIImage.searchIcon(size: CGSize(width: 25, height: 25), color: AppConstant.AppColor)
+        let searchIconSelected = UIImage.searchIcon(size: CGSize(width: 25, height: 25), color: AppConstant.AppWhite)
+        
+        let profileIcon = UIImage.profileIcon (size: CGSize(width: 20, height: 24), color: AppConstant.AppColor)
+        let profileIconSelected = UIImage.profileIcon(size: CGSize(width: 20, height: 24), color: AppConstant.AppWhite)
+        
+        
         
         for (index, item) in items.enumerate() {
             //item.titlePositionAdjustment = UIOffsetMake(0, 49)
-            //item.imageInsets = UIEdgeInsets(top: -tabbarItemInset, left: 0, bottom: tabbarItemInset, right: 0)
+            //item.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 3, right: 0)
             if index == 0 {
                 item.setTitleTextAttributes([NSForegroundColorAttributeName : AppConstant.AppWhite], forState: .Selected)
                 item.title = "Games"
-//                item.image = discoveryIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//                item.selectedImage = discoveryIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.image = gameIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.selectedImage = gameIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             }
             else if index == 1 {
                 item.setTitleTextAttributes([NSForegroundColorAttributeName : AppConstant.AppWhite], forState: .Selected)
                 item.title = "Streams"
-//                item.image = conversationIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//                item.selectedImage = conversationIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.image = streamIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.selectedImage = streamIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             }
-//            else if index == 2 {
-//                item.image = timelineIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//                item.selectedImage = timelineIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//            }
-//            else if index == 3 {
-//                item.image = notificationIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//                item.selectedImage = notificationIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//            }
-//            else if index == 4 {
-//                item.image = profileIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//                item.selectedImage = profileIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//            }
+            else if index == 2 {
+                item.title = "Search"
+                item.setTitleTextAttributes([NSForegroundColorAttributeName : AppConstant.AppWhite], forState: .Selected)
+                item.image = searchIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.selectedImage = searchIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            }
+            else if index == 3 {
+                item.title = "Profile"
+                item.setTitleTextAttributes([NSForegroundColorAttributeName : AppConstant.AppWhite], forState: .Selected)
+                item.image = profileIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.selectedImage = profileIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            }
+            //            else if index == 4 {
+            //                item.image = profileIcon.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            //                item.selectedImage = profileIconSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            //            }
         }
     }
     
@@ -170,7 +201,7 @@ class SutoTabBarController : UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.shadowOpacity = 0.8
-        self.tabBar.barTintColor = AppConstant.AppColor
+        self.tabBar.barTintColor = AppConstant.TwitchLightGray
         self.tabBar.translucent = false
     }
     
@@ -206,5 +237,7 @@ extension SutoTabBarController {
         }
         
         _oldSelectedIndex = tabBarController.selectedIndex
+        
+        _bar.frame.origin.x = CGFloat(_oldSelectedIndex) * _bar.frame.size.width
     }
 }

@@ -87,8 +87,8 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
             //Handle removing player
             player.pause()
             self.showStatusBar()
-//            playerController?.view.removeFromSuperview()
-//            playerController?.removeFromParentViewController()
+            //            playerController?.view.removeFromSuperview()
+            //            playerController?.removeFromParentViewController()
             
         }
     }
@@ -121,36 +121,36 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
         //self.setUpViewControllerExpands()
         //var url = NSURL(string:"http://video-edge-8e2c4c.arn01.hls.ttvnw.net/hls-83395c/dotamajor_21721419360_465654376/chunked/index-live.m3u8?token=id=2642192424157186774,bid=21721419360,exp=1465380730,node=video-edge-8e2c4c-1.arn01.hls.justin.tv,nname=video-edge-8e2c4c.arn01,fmt=chunked&sig=eae85f67180ad267300c607f74f26f4e7e3b58ba")
         
-//        self.player2 = DFVideoPlayer(URL: url)
-//        self.player2.showInWindow()
+        //        self.player2 = DFVideoPlayer(URL: url)
+        //        self.player2.showInWindow()
         
         
-//        let playerVC = MobilePlayerViewController(contentURL: url!)
-//        playerVC.title = "Vanilla Player"
-//        playerVC.activityItems = [url!] // Check the documentation for xmore information.
-//        presentMoviePlayerViewControllerAnimated(playerVC)
-
+        //        let playerVC = MobilePlayerViewController(contentURL: url!)
+        //        playerVC.title = "Vanilla Player"
+        //        playerVC.activityItems = [url!] // Check the documentation for xmore information.
+        //        presentMoviePlayerViewControllerAnimated(playerVC)
         
-//        self.player1 = Player()
-//        self.player1.delegate = self
-//        self.player1.view.frame = self.view.bounds
-//        
-//        self.addChildViewController(self.player1)
-//        self.view.addSubview(self.player1.view)
-//        self.player1.didMoveToParentViewController(self)
-//        
-//        self.player1.setUrl(url!)
-//        self.player1.playFromCurrentTime()
+        
+        //        self.player1 = Player()
+        //        self.player1.delegate = self
+        //        self.player1.view.frame = self.view.bounds
+        //        
+        //        self.addChildViewController(self.player1)
+        //        self.view.addSubview(self.player1.view)
+        //        self.player1.didMoveToParentViewController(self)
+        //        
+        //        self.player1.setUrl(url!)
+        //        self.player1.playFromCurrentTime()
         
         player = AVPlayer()
         playerLayer = AVPlayerLayer(player: player)
         
-//        playerController = AVPlayerViewController()
-//        playerController.player = player
-//        playerController.view.backgroundColor = AppConstant.TwitchDarkGray
-//        playerController.view.layer.zPosition = 5
+        //        playerController = AVPlayerViewController()
+        //        playerController.player = player
+        //        playerController.view.backgroundColor = AppConstant.TwitchDarkGray
+        //        playerController.view.layer.zPosition = 5
         //playerController.showsPlaybackControls = true
-//        playerController.title = "testing"
+        //        playerController.title = "testing"
         
         playerViewContainer = SutoPlayerContainer()
         playerViewContainer.delegate = self
@@ -211,7 +211,7 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
         
         viewModel.GetData({ data in
             if(data.count > 0) {
-            
+                
                 let nsurl = NSURL(string: data[0].Url!)
                 let item = AVPlayerItem(URL: nsurl!)
                 self.player.replaceCurrentItemWithPlayerItem(item)
@@ -277,9 +277,11 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
     func TogglePlayPause() {
         if(IsPlaying){
             player.pause()
+            IsPlaying = false
         }
         else {
             player.play()
+            IsPlaying = true
         }
     }
     
@@ -292,7 +294,7 @@ class PlayerViewController : UIViewController, PlayerControllDelegate
 extension PlayerViewController {
     
     func OnPlayPauseTapped() {
-        
+        TogglePlayPause()
     }
     
     func OnToggleFullScreen() {

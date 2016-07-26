@@ -11,6 +11,8 @@ import ReactiveCocoa
 import SDWebImage
 
 class StreamListViewModel : BaseViewModel, StreamListViewModeling {
+    var oldModelCount : Int = 0
+    var addedModelCount : Int = 0
     var dataBinding: AnyProperty<[TwitchStream]> { return AnyProperty(_dataBinding) }
     var isBusyBinding : AnyProperty<Bool> { return AnyProperty(_isBusyBinding) }
     
@@ -33,7 +35,8 @@ class StreamListViewModel : BaseViewModel, StreamListViewModeling {
         }
         _isBusyBinding.value = true
         streamService.GetData({(result) -> Void in
-
+            self.oldModelCount = self._dataBinding.value.count
+            self.addedModelCount = result.streams.count
             self._dataBinding.value += result.streams
             self.total = result.total!
             self._isBusyBinding.value = false

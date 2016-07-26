@@ -14,7 +14,7 @@ import ReactiveCocoa
 import Spring
 import pop
 
-public class TopStreamListController : UITableViewController {
+public class TopStreamListController : UITableViewController, TabbarItemDelegate {
     var initialized = false
     
     var viewModel : StreamListViewModel
@@ -89,7 +89,7 @@ public class TopStreamListController : UITableViewController {
             
             hidingNavBarManager = HidingNavigationBarManager(viewController: self, scrollView: self.tableView!)
             hidingNavBarManager?.manageBottomBar((self.tabBarController?.tabBar)!)
-
+            
             
             self.refreshControl = UIRefreshControl()
             self.refreshControl!.layer.zPosition = -1
@@ -106,18 +106,23 @@ public class TopStreamListController : UITableViewController {
             self.viewModel.dataBinding.producer
                 .observeOn(UIScheduler())
                 .on(
-                next : {
-                    _ -> Void in
-                    self.tableView.reloadData()
-                    self.scrollViewDidScroll(self.tableView!)
-                    //self.process.stopAnimating()
-                    
-            }).start()
+                    next : {
+                        _ -> Void in
+                        
+                        var indexPaths : [NSIndexPath] = []
+                        for i in (0 ..< self.viewModel.addedModelCount) {
+                            indexPaths.append(NSIndexPath(forRow: self.viewModel.oldModelCount + i, inSection: 0))
+                        }
+                        self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .None)
+                        //self.scrollViewDidScroll(self.tableView!)
+                        //self.process.stopAnimating()
+                        
+                }).start()
             
             self.GetData(stopRefresher)
             initialized = true
         }
-
+        
     }
     
     public override func scrollViewShouldScrollToTop(scrollView: UIScrollView) -> Bool {
@@ -139,9 +144,9 @@ public class TopStreamListController : UITableViewController {
     }
     
     public override func willMoveToParentViewController(parent: UIViewController?) {
-//        if(parent != nil) {
-//            self.viewModel.Reset()
-//        }
+        //        if(parent != nil) {
+        //            self.viewModel.Reset()
+        //        }
     }
     
     override public func viewDidAppear(animated: Bool) {
@@ -185,24 +190,24 @@ extension TopStreamListController {
     
     public override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell {
-        //var temp = tableView.dequeueReusableCellWithIdentifier("testing")
-        //temp?.textLabel?.text = "row \(indexPath.row)"
+            //var temp = tableView.dequeueReusableCellWithIdentifier("testing")
+            //temp?.textLabel?.text = "row \(indexPath.row)"
             
-        //return temp!
+            //return temp!
             
-        if(indexPath.row + 12 > viewModel.dataBinding.value.count && viewModel.isBusyBinding.value == false){
-            process.startAnimating()
-            self.GetData({})
-        }
+            if(indexPath.row + 12 > viewModel.dataBinding.value.count && viewModel.isBusyBinding.value == false){
+                process.startAnimating()
+                self.GetData({})
+            }
             
-        let cell = tableView.dequeueReusableCellWithIdentifier(streamCellIdentifier, forIndexPath: indexPath) as! StreamCell
-        if(indexPath.row < viewModel.dataBinding.value.count)
-        {
-            let stream = viewModel.dataBinding.value[indexPath.row]
-            cell.viewModel = StreamCellViewModel(stream : stream)
-        }
-        cell.setBackgroundOffset(cell.frame.origin.y - self.tableView.contentOffset.y)
-        return cell
+            let cell = tableView.dequeueReusableCellWithIdentifier(streamCellIdentifier, forIndexPath: indexPath) as! StreamCell
+            if(indexPath.row < viewModel.dataBinding.value.count)
+            {
+                let stream = viewModel.dataBinding.value[indexPath.row]
+                cell.viewModel = StreamCellViewModel(stream : stream)
+            }
+            cell.setBackgroundOffset(cell.frame.origin.y - self.tableView.contentOffset.y)
+            return cell
     }
     
     public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -229,6 +234,13 @@ extension TopStreamListController {
         }
         
         SDWebImagePrefetcher.sharedImagePrefetcher().prefetchURLs(urls)
+    }
+    
+    public func viewControllerScrollViewGoesToTop(){
+        self.tableView.setContentOffset(
+            CGPointMake(self.tableView!.contentOffset.x,
+                -self.tableView!.contentInset.top),
+            animated: true)
     }
     
     

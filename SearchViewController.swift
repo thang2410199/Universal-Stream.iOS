@@ -9,31 +9,38 @@ import PureLayout
 
 class SearchViewController : UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
     var viewModel : SearchViewModel
-
+    
     var searchField : UITextField!
     var tableView : UITableView!
     var searchController : UISearchController!
+    var backButton : HighLightButton!
     
     let userCellIdentifier = "userCellIdentifier"
     let gameCellIdentifier = "gameCellIdentifier"
     let streamCellIdentifier = "streamCellIdentifier"
-
+    
     init()
     {
         viewModel = getInstance()!
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         viewModel = getInstance()!
         super.init(coder : aDecoder)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Search"
         //navigationController?.navigationBar.tintColor = AppConstant.AppColor
+        
+        
+//        backButton = HighLightButton(image: UIImage.backIcon(size: CGSize(width: 20, height: 20), color: AppConstant.AppWhite), alignment: .Left)
+//        backButton.addTarget(self, action: #selector(SearchViewController.goBack), forControlEvents: .TouchUpInside)
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        
         
         // prepare tableView
         tableView = UITableView()
@@ -67,14 +74,14 @@ class SearchViewController : UIViewController, UITableViewDelegate, UITableViewD
         tableView.tableFooterView = UIView()
         
         self.view.backgroundColor = AppConstant.AppWhite
-
+        
         // UI
         searchField = UITextField()
-
+        
         // Layout
         //self.view.addSubview(searchField)
         self.view.addSubview(tableView)
-
+        
         //searchField.autoSetDimension(ALDimension.Height, toSize: 40)
         //searchField.autoPinEdgeToSuperviewEdge(ALEdge.Top)
         
@@ -88,10 +95,14 @@ class SearchViewController : UIViewController, UITableViewDelegate, UITableViewD
             .start()
     }
     
+    func goBack() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.userModels.value.count
     }
@@ -102,7 +113,7 @@ class SearchViewController : UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(userCellIdentifier)!
-//        cell.textLabel?.text = self.viewModel.userModels.value[indexPath.row]
+        //        cell.textLabel?.text = self.viewModel.userModels.value[indexPath.row]
         cell.textLabel?.text = "row #\(indexPath.row)"
         return cell
     }

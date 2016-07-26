@@ -10,6 +10,9 @@ import ReactiveCocoa
 import Result
 
 public protocol HomeViewModeling {
+    var oldGameModelsCount : Int { get set }
+    var addedGameModelCount : Int { get set }
+    
     var cellModels: AnyProperty<[TwitchGameCellModeling]> { get }
     var searching: AnyProperty<Bool> { get }
     var errorMessage: AnyProperty<String?> { get }

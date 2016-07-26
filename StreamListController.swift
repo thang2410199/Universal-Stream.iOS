@@ -45,16 +45,16 @@ public class StreamListController : UITableViewController {
     override public func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-
-//        else
-//        {
-//            if let navigationController = self.navigationController {
-//                //navigationController.navigationBarHidden = true
-//                navigationController.hidesBarsOnSwipe = true
-//                navigationController.navigationBar.tintColor = AppConstant.AppWhite
-//                self.navigationItem.title = "Top Streams"
-//            }
-//        }
+        
+        //        else
+        //        {
+        //            if let navigationController = self.navigationController {
+        //                //navigationController.navigationBarHidden = true
+        //                navigationController.hidesBarsOnSwipe = true
+        //                navigationController.navigationBar.tintColor = AppConstant.AppWhite
+        //                self.navigationItem.title = "Top Streams"
+        //            }
+        //        }
     }
     var process : UIActivityIndicatorView!
     
@@ -105,18 +105,23 @@ public class StreamListController : UITableViewController {
             self.viewModel.dataBinding.producer
                 .observeOn(UIScheduler())
                 .on(
-                next : {
-                    _ -> Void in
-                    self.tableView.reloadData()
-                    self.scrollViewDidScroll(self.tableView!)
-                    //self.process.stopAnimating()
-                    
-            }).start()
+                    next : {
+                        _ -> Void in
+                        
+                        var indexPaths : [NSIndexPath] = []
+                        for i in (0 ..< self.viewModel.addedModelCount) {
+                            indexPaths.append(NSIndexPath(forRow: self.viewModel.oldModelCount + i, inSection: 0))
+                        }
+                        self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .None)
+                        //self.scrollViewDidScroll(self.tableView!)
+                        //self.process.stopAnimating()
+                        
+                }).start()
             
             self.GetData(stopRefresher)
             initialized = true
         }
-
+        
     }
     
     public func Refresh()
@@ -133,9 +138,9 @@ public class StreamListController : UITableViewController {
     }
     
     public override func willMoveToParentViewController(parent: UIViewController?) {
-//        if(parent != nil) {
-//            self.viewModel.Reset()
-//        }
+        //        if(parent != nil) {
+        //            self.viewModel.Reset()
+        //        }
     }
     
     override public func viewDidAppear(animated: Bool) {
@@ -181,24 +186,24 @@ extension StreamListController {
     
     public override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell {
-        //var temp = tableView.dequeueReusableCellWithIdentifier("testing")
-        //temp?.textLabel?.text = "row \(indexPath.row)"
+            //var temp = tableView.dequeueReusableCellWithIdentifier("testing")
+            //temp?.textLabel?.text = "row \(indexPath.row)"
             
-        //return temp!
+            //return temp!
             
-        if(indexPath.row + 12 > viewModel.dataBinding.value.count && viewModel.isBusyBinding.value == false){
-            process.startAnimating()
-            self.GetData({})
-        }
+            if(indexPath.row + 12 > viewModel.dataBinding.value.count && viewModel.isBusyBinding.value == false){
+                process.startAnimating()
+                self.GetData({})
+            }
             
-        let cell = tableView.dequeueReusableCellWithIdentifier(streamCellIdentifier, forIndexPath: indexPath) as! StreamCell
-        if(indexPath.row < viewModel.dataBinding.value.count)
-        {
-            let stream = viewModel.dataBinding.value[indexPath.row]
-            cell.viewModel = StreamCellViewModel(stream : stream)
-        }
-        cell.setBackgroundOffset(cell.frame.origin.y - self.tableView.contentOffset.y)
-        return cell
+            let cell = tableView.dequeueReusableCellWithIdentifier(streamCellIdentifier, forIndexPath: indexPath) as! StreamCell
+            if(indexPath.row < viewModel.dataBinding.value.count)
+            {
+                let stream = viewModel.dataBinding.value[indexPath.row]
+                cell.viewModel = StreamCellViewModel(stream : stream)
+            }
+            cell.setBackgroundOffset(cell.frame.origin.y - self.tableView.contentOffset.y)
+            return cell
     }
     
     public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

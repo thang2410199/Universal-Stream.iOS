@@ -11,6 +11,9 @@ import Result
 
 public final class HomeViewModel : HomeViewModeling {
     
+    public var oldGameModelsCount : Int = 0
+    public var addedGameModelCount : Int = 0
+    
     //public property for Reactivecocoa
     public var cellModels: AnyProperty<[TwitchGameCellModeling]> { return AnyProperty(_cellModels) }
     public var searching: AnyProperty<Bool> { return AnyProperty(_searching) }
@@ -43,7 +46,6 @@ public final class HomeViewModel : HomeViewModeling {
     private let nextPageTrigger = MutableProperty<(SignalProducer<(), NoError>, Observer<(), NoError>)?>(nil) // SignalProducer buffer
     
     private var foundGames = [TwitchTopGame]()
-    
     private var topGameResult : TwitchTopGameResult?
     private let endpointService : DataSource<TwitchEndpointResult>
     private let topGameService : DataSource<TwitchTopGameResult>
@@ -76,6 +78,8 @@ public final class HomeViewModel : HomeViewModeling {
             .observeOn(UIScheduler())
             .on(next: { games, cellModels in
                 self.foundGames += games!
+                self.oldGameModelsCount = self._cellModels.value.count
+                self.addedGameModelCount = cellModels.count
                 self._cellModels.value += cellModels
                 self._searching.value = false
             })
